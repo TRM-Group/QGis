@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 
 # 🔧 Crear sesión persistente
 session = requests.Session()
@@ -60,32 +59,3 @@ if "portalebanchedatij.visura.it" in resp_submit.text:
     print("✅ Redirección a portalebanchedatij detectada.")
 else:
     print("⚠️ No se detecta redirección. Revisa step3_submit.html")
-
-# -----------------------------
-# 5️⃣ Preparar request hacia SceltaLink.do (portalebanchedatij)
-# -----------------------------
-soup = BeautifulSoup(resp_submit.text, "html.parser")
-form = soup.find("form", action=lambda x: x and "SceltaLink.do" in x)
-
-if not form:
-    print("⚠️ Form hacia portalebanchedatij no encontrado.")
-else:
-    next_url = "https://portalebanchedatij.visura.it/" + form["action"]
-    form_data = {}
-    for inp in form.find_all("input"):
-        name = inp.get("name")
-        value = inp.get("value", "")
-        if name:
-            form_data[name] = value
-
-    # Aquí se puede especificar el value del select
-    form_data["listaCom"] = "CALTANISSETTA Territorio-CL"  # ejemplo con espacio
-    form_data["codUfficio"] = "BG"  # ejemplo, según tu necesidad
-
-    resp_next = session.post(next_url, data=form_data)
-    print("➡️ Step 5 SceltaLink.do status:", resp_next.status_code)
-
-    with open("step5_scelta.html", "w", encoding="utf-8") as f:
-        f.write(resp_next.text)
-
-    print("✅ Se ha enviado el request hacia portalebanchedatij")
