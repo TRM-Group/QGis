@@ -64,8 +64,19 @@ else:
 # -----------------------------
 # 5️⃣ Preparar request hacia SceltaLink.do (portalebanchedatij)
 # -----------------------------
+"""
+url next = https://portalebanchedatij.visura.it/framesetAgenziaTerritorioIF.htm
+<form name="homepageBancheDatiForm" method="post" action="/homepageBancheDatiAction1NuovoVisura.do">
+	<input type="hidden" name="token" value="1760477696579187081726">
+	<input type="hidden" name="catalogoEncodato" value="0;0.20|111;6.40|205;0.76|208;15.10|209;15.10|230;2.20|234;2.20|261;6.30|701;0.20|702;0.20|ABBONAMENTOBD_LEGALE;15.00|CATEstrMappaUffDiv;0.60|CATEstrMappaUffRif;0.60|CATIspIpFormEleSint;3.80|CATIspIpFormEleSintUC;3.80|CATIspIpNazRicNom;26.30|CATIspIpNazRicNomUC;7.10|CATIspIpNotaTitolo;7.30|CATIspIpNotaTitoloUC;3.30|CATIspIpNTitDiretto;7.30|CATIspIpNTitDirettoUC;3.30|CATIspIpRicNomImm;12.40|CATIspIpRicNomImmUC;6.00|CATRicCatNazionale;0.60|CATVisCatastale101;0.60|CATVisCatastale102;1.45">
+	<input type="hidden" name="idClienteUtente" value="0">
+	<input type="hidden" name="clienteUtente" value="">
+	<input type="hidden" name="statoSaldo" value="">
+	<input type="hidden" name="loginbd" value="https://portalebanchedatij.visura.it:443/ECMBKE/LoginBD">	
+</form>
+"""
 soup = BeautifulSoup(resp_submit.text, "html.parser")
-form = soup.find("form", action=lambda x: x and "SceltaLink.do" in x)
+form = soup.find("form", attrs={"action":"/homepageBancheDatiAction1NuovoVisura.do"})
 
 if not form:
     print("⚠️ Form hacia portalebanchedatij no encontrado.")
@@ -78,10 +89,48 @@ else:
         if name:
             form_data[name] = value
 
+    print(f"Form data: {form_data}")
     # Aquí se puede especificar el value del select
     form_data["listaCom"] = "CALTANISSETTA Territorio-CL"  # ejemplo con espacio
     form_data["codUfficio"] = "BG"  # ejemplo, según tu necesidad
 
+
+next_url = form_data["loginbd"]
+print(f"URL page for loggato {next_url}")
+loggato = session.post(next_url, data=form_data)
+print("➡️ Redirect Form:", loggato.status_code)
+
+with open("step4_redirect.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
+next_url = "https://portalebanchedatij.visura.it/Servizi/"
+print(f"URL page for loggato {next_url}")
+loggato = session.get(next_url)
+print("➡️ servizi Form:", loggato.status_code)
+
+with open("step5_framset.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
+next_url = "https://portalebanchedatij.visura.it/Servizi/InformativaPrivacy.do"
+print(f"URL page for conferma {next_url}")
+loggato = session.post(next_url, data="")
+print("➡️ Conferma Servizi Form:", loggato.status_code)
+
+with open("step6_conferma.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
+next_url = "https://portalebanchedatij.visura.it/framesetAgenziaTerritorioIF.htm"
+print(f"URL page for conferma {next_url}")
+loggato = session.get(next_url)
+print("➡️ Conferma Servizi Form:", loggato.status_code)
+
+with open("step7_conferma.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+"""
     resp_next = session.post(next_url, data=form_data)
     print("➡️ Step 5 SceltaLink.do status:", resp_next.status_code)
 
@@ -89,3 +138,4 @@ else:
         f.write(resp_next.text)
 
     print("✅ Se ha enviado el request hacia portalebanchedatij")
+"""
