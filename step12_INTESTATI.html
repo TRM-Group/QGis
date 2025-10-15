@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="it">
@@ -80,8 +81,7 @@
 		
 
 		
-			<title>Home dei Servizi</title>
-			
+		<title>Intestati</title>
 		
 		
 		<script type="text/javascript" src="/js/browser_detection.js"></script>
@@ -99,14 +99,12 @@
 		<div class="skiplink"><a href="#menuprinc">Menu principale</a> </div>
 		
 		<header role="banner" aria-label="Informazioni e strumenti utente">
+		   
+             
+                                   
+               
 
-		 
-		 
-						
-					
-		
-		
-		
+
 			<div id="agenzia-header">
 				<div class="container-fluid">
 					<div class="row">
@@ -127,15 +125,15 @@
 						<div class="col-xs-5 col-xl-6">
 							<div class="row header-links">
 								<div class="col-xs-10 col-sm-7">
-
-							 		
-																	
-							 	      	
-							 	      <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
-							   				
+									  
+                                                                                                 
+                                                         
+                                                     <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
+                                                               
+                                                
 									
-
 									<!--  -->
+								<!--	 <a class="apri_finestra" href=http://www.agenziaentrate.gov.it/wps/portal/entrate/ ><i class="fa fa-arrow-left"></i>Sito informativo</a>-->
 								</div>
 								<div class="col-xs-2 col-sm-5 text-right">
 									<a href="#"></a>
@@ -164,18 +162,19 @@
 	<div id="user-collapse" class="row"> <!-- attenzione tolta classe collapse  -->
 		
 		
-		
-		
 		 
-		 
-						
-					
+             
+                                   
+                            
+            
+            <div class="col-xs-12 text-right">
+                  
+            </div>
 		
-		<div class="col-xs-12 text-right">
-			
-
-  		</div>
-	</div>
+		<!-- <div class="col-xs-12 text-right">
+			<a class="btn btn-primary" href="/Servizi/CloseSessions"><i class="fa fa-sign-out"></i>Esci</a>
+		</div> -->
+  	</div>
 </div>
 						</div>
 			   		</div>
@@ -228,68 +227,85 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-3 col-xl-2">
-						<nav role="navigation" aria-label='Menu della sezione Servizi'>
-							<h1 class="sr-only">Menu della sezione Servizi</h1>
-							<!-- Se il menu e' a tre livelli: -->
-							<!-- riportare come titolo del Menu di sezione la voce di secondo livello del Menu principale -->
-							<div id="menu-left-title">
-								<span>Servizi</span>
-<!-- 								<a href="#menu-left" data-toggle="collapse" class="visible-xs collapsed"> -->
-<!-- 									<i class="fa fa-lg fa-pull-right"></i> -->
-<!-- 								</a> -->
-							</div>
+						
+							
+								<nav role="navigation" aria-label='Menu della sezione Visure Catastali'>
+									<h1 class="sr-only">Menu della sezione Visure Catastali</h1>
+									<div id="menu-left-title">
+										<span>Visure catastali</span>
+									</div>
+									<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+
+
+
+
+
+	
+
+		<ul id="menu-left" class="nav">
+		 	
+			
+			
+			
+				
+				
+						
+					<li><a href="/Visure/SceltaLink.do?lista=PF&amp;codUfficio=BG">Persona fisica</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=PNF&amp;codUfficio=BG">Persona giuridica</a></li>					
+				
+					<li><a href="/Visure/SceltaLink.do?lista=IMM&amp;codUfficio=BG">Immobile</a></li>					
+				
+					<li><a href="/Visure/SceltaLink.do?lista=IND&amp;codUfficio=BG">Indirizzo</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=PART&amp;codUfficio=BG">Partita</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=EIMM&amp;codUfficio=BG">Elenco immobili</a></li>	
+	
+					<li><a href="/Visure/SceltaLink.do?lista=NOTA&amp;codUfficio=BG">Nota</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=EM&amp;codUfficio=BG">Mappa</a></li>
+						
+					
+					
+					
+						
+					<li><a href="/Visure/SceltaLink.do?lista=FID&amp;codUfficio=BG">Punti fiduciali</a></li>	
+						
+					
+					
+						
+					<li><a href="/VisureNew/SwitchWebApp.do?lista=ELPL&amp;cod=BG&amp;desc=BERGAMO Territorio">Elaborato Planimetrico</a></li>	
+					
+						 
+					<li><a href="/Visure/RiepilogoVisure/UtentiRiepilogoVisure.do">Riepilogo Visure</a></li>
+					
+				
+			
+			
+			<li><a href="/Visure/SceltaServizio.do?tipo=/T/TM/VCVC_">Cambia Ufficio</a></li>
+			
+			
+				<li><a href="/Visure/SceltaLink.do?lista=ISP&amp;codUfficio=BG&amp;tipoRicerca=IMM">Passa a Ispezioni</a></li>
+			
+			
+   	        
+			<li><a href="/Servizi/ConsultazioneRichieste.do?metodo=lista&amp;numConv=1043111&amp;apertura=T" onclick="NewWindow(this.href,'richieste');return false;"  title="(link esterno: si apre in una nuova finestra)">Richieste</a ></li>			
+			<li><a href="/Visure/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a></li>			
+		</ul>
+
+		
+					
+
+								</nav>
 							
 							
-
-
-<!-- SISTER -->
-
-
-<!-- Servizi -->
-
-	<ul id="menu-left" class="nav">
-	 	
-		
-		
-		
-		
-	    	
-	   		
-	   			<li data-active="Consultazioni e Certificazioni">
-	   				<a href="/Servizi/SceltaServizio.do?area=Consultazioni e Certificazioni">Consultazioni e Certificazioni</a>
-   				</li>
-	   		
-	   	
-	    	
-	   		
-	   			<li data-active="Gestione Utenza">
-	   				<a href="/Servizi/SceltaServizio.do?area=Gestione Utenza">Gestione Utenza</a>
-   				</li>
-	   		
-	   	
-	   	
-	   	
-		
-		<li data-active="Assistenza">
-			<a href="/Servizi/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a>
-		</li>
-	</ul>
-
-
-							
-						<!-- Voce espandibile -->
-					<!-- 	<li class="submenu">
-							<a href="#submenu-1" class="collapsed" data-toggle="collapse">
-								Voce 3
-							</a>
-							<ul id="submenu-1" class="nav collapse" aria-hidden="false">
-								<li><a href="#">Voce 3.1</a></li>
-								<li><a href="#">Voce 3.2</a></li>
-								<li><a href="#">Voce 3.3</a></li>
-							</ul>
-						</li> -->
-							
-						</nav>
+						
 					</div>
 					<div class="col-xs-9 col-xl-10">
 						<div id="contenitore">
@@ -299,7 +315,13 @@
 								<div id="colonna1">
 									<ul class="breadcrumb">
 		              					<span>Ti trovi in:</span> 
-		              										Home dei Servizi
+		              					<a href="/Servizi/index.jsp">Home dei Servizi</a> / 					<A href="/Visure/SceltaServizio.do?tipo=/T/TM/VCVC_" class="" style="">Visure</A>
+			/ 
+					<A href="/Visure/vimm/datiRicercaImm.jsp" class="" style="">Ricerca per immobile</A>
+			/ 
+					<A href="/Visure/vimm/immobiliImm.jsp" class="" style="">Elenco immobili</A>
+			/ 
+					Intestati
 
 									</ul>
 
@@ -311,15 +333,29 @@
 	
 		
 		
-		
-			<div class="utenteVuoto">
+			<div class="utente">
 				<div class="utenteSinistra">
+					
+					
+					
+						
+						
+							
+						
+						Convenzione: <strong>VISURA SPA (CONSULTAZIONI - PROFILO B)</strong>
+						
+						<br>Codice di Richiesta: <strong>C00013792007</strong>
+						
+					
 				</div>
 				<div class="chiudiSessione">
 					
 				</div>
 				<div class="clearRight"> </div>
 			</div>
+			
+		
+		
 		
 	
 	
@@ -330,72 +366,246 @@
 										<a id="contenuto" name="contenuto"></a>
 										
 										
-							
-							<br>
-							<div class="errore_txt">
-								<strong> 
-									
-										Benvenuto	
-												
-										
-										
-									 	
-									PAOLO&nbsp;GALBIATI,&nbsp;il tuo ultimo accesso è stato il&nbsp;15/10/2025 18:06.<br>
-									
-								</strong>Totale  Utenti connessi: 6097 
-							</div>
-							
-							
-							 
-							
-							
-							
-						
-							
-								<form name="PrivacyFB" method="post" action="/Servizi/InformativaPrivacy.do">
+<script type="text/javascript" src="/js/modalBox.js" ></script>
+<link rel="stylesheet" href="/css/modalBox.css" type="text/css">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+<html>
+	<head>
+		<title>intestazione</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="GENERATOR" content="Rational Application Developer">
+	</head>
+<body>
 	
-									<h2 class="notifiche"><i class="fa fa-lock" aria-hidden="true"></i>Informativa trattamento dei dati personali</h2>
-									<p align="left">
-											Gentile Utente,<br>con l'informativa presente nell'allegato riportato di seguito l'Agenzia delle Entrate spiega come utilizza i dati raccolti che Lei fornisce per usufruire del servizio telematico SISTer;  
-											<br><strong>Attenzione:</strong> La mancata conferma di presa visione non consentirà all'Agenzia l'erogazione del servizio richiesto.
-											<br><a href="/doc/informativaGDPR.pdf" onclick="NewWindow(this.href,'privacy');return false;"  title="informativa GDPR">Scarica l'informativa sul trattamento dei dati personali da questo link</a>
-									</p>
-									
-								
-								<input type="submit" name="submit" value="Conferma">
-								<input type="submit" name="submit" value="Annulla">
-							 </form>
-							 <br>
-							 
+			<br/>
+			<h1>Ufficio provinciale di: BERGAMO Territorio</h1>
+			<br/>
+			
+			
+			
+			
+				<strong>Situazione aggiornata al :
+				15/10/2025 </strong>
+			
+			
+			
+			
+			
+			
+			
+				
+				
+			
 
-							
-															
-								
-									
-															
- 							
 
-							
-							<h2 class="primoPiano">Primo piano</h2>
-							<ul>
-								
-									<li><strong></strong> - <strong><a class="blu_titolo_notizia">Non sono presenti news</a></strong> <br/>
-									</li>
-								 
-							</ul>
-							
-							
-							
-							
-							<br>
-							
-								
-							
-							 
-							 	
-							 
-							  
+
+
+ 
+</body>
+</html>
+
+<br>				
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//IT">
+	
+
+
+
+
+
+
+
+
+
+	
+
+<html>
+<head>
+<title>riepilogo immobile</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="GENERATOR" content="Rational Application Developer">
+</head>
+<body>
+    
+  
+   
+
+	<fieldset>
+		<legend class="blue">Immobile selezionato</legend>
+		<br>
+		<div class="riepilogo">
+			   Catasto:<span class="scritta_colorata">  <strong>Terreni </strong></span>&nbsp;
+			 
+			   Comune: <strong>COLOGNO AL SERIO</strong>
+			   
+			    
+			   Codice: <strong>C894</strong>
+			   
+			   
+			
+			
+			<br>
+			   
+			   Foglio:<strong>9</strong>
+			   
+			   
+			  
+			   Particella:<strong>5731</strong>
+			  
+			   <br/>
+			
 					
+</div>
+</fieldset>
+
+</body>
+</html>
+
+<div class="errore_txt">
+Selezionare un Omonimo.
+<br></div>
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+
+<form name="SceltaIntestatiForm" method="post" action="/Visure/vimm/SceltaIntestatiIMM.do">			
+	
+
+	
+	<fieldset> <legend class="blue">Elenco Intestati</legend>	
+		       		       
+	 
+		<table class="listaIsp4">
+		<tr>
+		<th></th>
+		<th>Nominativo o denominazione</th>
+						
+							<th>Codice fiscale</th>
+							<th>Titolarit&agrave;</th>
+							<th>Quota</th>
+							<th>Altri dati</th>
+							
+						</tr>
+						<tbody>
+						
+	
+							
+
+								<tr class="rigascura">
+								                                
+                                	
+									
+										<td><input type="radio" name="intestatoSelezionato"
+										value="6449504#1387876#POSSENTI ANDREA #PSSNDR66R03E507K#F#LECCO (LC)#03/10/1966"></input></td>
+									
+									
+									
+								
+                                
+                                
+                                	
+								
+                                <td class="listaIsp5" headers="nominativo">POSSENTI ANDREA  nato a LECCO (LC) il 03/10/1966</td>
+								
+								
+								
+								
+								
+								
+								
+								
+									
+								
+									<td headers="codfisc" align="center">PSSNDR66R03E507K</td>
+									<td headers="titolarita" align="center">Proprieta' </td>
+									<td headers="quota" align="center">1/2</td>
+                                    <td headers="altriDati" align="center"></td>
+								</tr>
+
+
+							
+
+								<tr class="rigachiara">
+								                                
+                                	
+									
+										<td><input type="radio" name="intestatoSelezionato"
+										value="6449503#847896#POSSENTI MARCO #PSSMRC64M09E507R#F#LECCO (LC)#09/08/1964"></input></td>
+									
+									
+									
+								
+                                
+                                
+                                	
+								
+                                <td class="listaIsp5" headers="nominativo">POSSENTI MARCO  nato a LECCO (LC) il 09/08/1964</td>
+								
+								
+								
+								
+								
+								
+								
+								
+									
+								
+									<td headers="codfisc" align="center">PSSMRC64M09E507R</td>
+									<td headers="titolarita" align="center">Proprieta' </td>
+									<td headers="quota" align="center">1/2</td>
+                                    <td headers="altriDati" align="center"></td>
+								</tr>
+
+
+							
+						</tbody>
+
+					</table>  
+					
+					</fieldset>
+					
+	<br> 
+	<table><tr><td>
+	 
+		<input type="submit" name="immobili" value="Immobili">
+		<input type="submit" name="visura" value="Visura per Soggetto">		
+		
+	      
+   
+ <input type="hidden" name="flagScSog" value="0">			
+								
+</form>
+</td>
+<td>
+
+
+
+<form name="SceltaVisuraImmSoggForm" method="post" action="/Visure/IndietroVisImmSogg.do" onsubmit="this.indietro.disabled=true;">		
+	<input type="submit" name="indietro" value="Indietro">
+</form>
+
+
+</td></tr></table>
+						
 									</div>
 								</div> <!-- Fine colonna 1 -->
 							</div>

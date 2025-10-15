@@ -144,6 +144,36 @@ with open("step9_IMMOBILE.html", "w", encoding="utf-8") as f:
     f.write(loggato.text)
 
 
+# STEP 9B
+
+next_url = "https://portalebanchedatij.visura.it/Visure/vimm/RicercaIMM.do"
+print(f"URL page for selecting 'IMMOBILE' {next_url}")
+data_form = {
+    "tipoCatasto": "T",
+    "denomComune" : "C894#COLOGNO AL SERIO#0#0",
+    "selSezione" : "",
+    "sezione": "",
+    "tipoIdentificativo": "d",
+    "sezUrb": "",
+    "foglio": "09",
+    "particella1": "5731",
+    "particella2": "",
+    "subalterno1" : "",
+    "tipoDenuncia" : "",
+    "numero1": "",
+    "anno" : "",
+    "richiedente": "",
+    "motivoText" : "",
+    "scelta": "Ricerca"
+}
+loggato = session.post(next_url, data=data_form)
+print("➡️ Conferma Data Richiesta Form:", loggato.status_code)
+
+with open("step9B_IMMOBILE.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
+
 # value="C894#COLOGNO AL SERIO#0#0"
 """
 action="/Visure/vimm/AssenzaSubalterno.do"
@@ -195,22 +225,35 @@ else:
             form_data[name] = value
     
     print(f"✅ Form data got it from portalebanchedatij.\n {form_data}")
+    visImmSel_value = soup.find("input", {"property": "visImmSel"}).get("value")
+    print(f"visImmSel from Form and property {visImmSel_value}")
 
-next_url = "https://portalebanchedatij.visura.it/Visure/vimm/SceltaIntestatiIMM.do"
+next_url = "https://portalebanchedatij.visura.it/Visure/vimm/SceltaVisuraImmSoggIMM.do"
 print(f"INTESTATI {next_url}")
-"""
+print(f"visImmSel: {form_data["visImmSel"]}")
+texto = form_data["visImmSel"]
+# "388326#388326#T#9#5731#C894#0002121## #COLOGNO AL SERIO"
+# 388326#388326#T#9#5731#C894#0002121## #COLOGNO AL SERIO
+# https://portalebanchedatij.visura.it/Visure/vimm/SceltaVisuraImmSoggIMM.do
 data_form = {
-    "visImmSel": form_data["visImmSel"],
-    "intestati": 'Intestati',
-    'visuraImm': '', 
-    'partita': ''
+    "visImmSel": visImmSel_value,
+    "intestati": "Intestati"
 }
-"""
-loggato = session.post(next_url, data="")
+
+headers = {
+    "Referer": "https://portalebanchedatij.visura.it/Visure/vimm/AssenzaSubalterno.do",
+    "Origin": "https://portalebanchedatij.visura.it",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Mobile Safari/537.36",
+}
+
+loggato = session.post(next_url, data=data_form, headers=headers)
 print("➡️ Conferma INTESTATI Form:", loggato.status_code)
 
 with open("step11_INTESTATI.html", "w", encoding="utf-8") as f:
     f.write(loggato.text)
+
+
+# tal vez un indietro
 
 
 # Close Session ❌
