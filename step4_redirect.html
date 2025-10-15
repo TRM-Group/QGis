@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<HTML>
+  <HEAD>
+    <META content="text/html; charset=UTF-8">    
+    <META content="no-cache">
+	 <link rel="stylesheet" href="/ECMBKE/css/style.css">
+    <TITLE>
+    		Agenzia del Territorio -IDENTITA' FEDERATA 
+    </TITLE>
+<style>
+body{
+    margin:0;
+    padding:0;
+	overflow: hidden;
+}
+#frame {
+    position: absolute;
+    z-index: 998;
+    top: 38px;
+	left:0;
+	height:calc(100vh - 40px);
+}
+#BARRETTA{
+  height:240px;
+}
+</style>
+ </HEAD>
+ 
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>	
+		$( document ).ready(function() {
+		
+           $(document).load($(window).bind("resize", checkPosition));
+		   
+            function checkPosition()
+                {
+                    if (window.matchMedia("screen and (min-width:1180px)").matches) 
+                    {
+					   jQuery("#frame").css("top", "38px");
+                       jQuery("#frame").css("height", "calc(100vh - 40px)");
+                    } else{
+					    var topValue = document.getElementById("BARRETTA").contentWindow.document.getElementById("mainFrameVISURA").contentWindow.document.getElementById("session-container");
+						var theCSSprop = topValue.offsetHeight; 
+					    var element = document.getElementById("BARRETTA").contentWindow.document.getElementById("mainFrameVISURA").contentWindow.document.getElementById("hamburger");
+					   	    if(element !== null && element.classList.contains('opened')){
+							    jQuery("#frame").css("top", (theCSSprop+38)+"px");
+								var subheight = theCSSprop+40;
+                                jQuery("#frame").css("height", "calc(100vh - " + subheight+"px)");
+					        }   
+					}
+                }
+        });
+		
+        var doResizeHeader = function(statusHamburger) {
+		   var topValue = document.getElementById("BARRETTA").contentWindow.document.getElementById("mainFrameVISURA").contentWindow.document.getElementById("session-container");
+		   var theCSSprop = topValue.offsetHeight;
+		   if(statusHamburger==='opened'){
+			  jQuery("#frame").animate({top: (theCSSprop+38)+"px"}, 700);
+			  var subheight = theCSSprop+40;
+              jQuery("#frame").css("height", "calc(100vh - " + subheight+"px)");
+			}else if(statusHamburger==='closed'){
+			  jQuery("#frame").animate({top: "38px"}, 200);
+			  jQuery("#frame").css("height", "calc(100vh - 40px)");
+			}
+        }
+		
+    </script>
+
+  <iframe src="/ECMBKE/InfoNavigazione" name="BARRETTA" scrolling="NO" noresize id="BARRETTA" style="width:100%"></iframe>
+  <iframe  NAME="header" src="/Servizi/" name="header" scrolling="yes" noresize="" id="frame" style="width:100%"></iframe>
+
+
+  
+</HTML>
+
+
