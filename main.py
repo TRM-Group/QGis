@@ -119,6 +119,99 @@ with open("step7_conferma.html", "w", encoding="utf-8") as f:
 
 # Space for searching form and getting data
 
+next_url = "https://portalebanchedatij.visura.it/Visure/DataRichiesta.do"
+print(f"URL page for selecting 'Provincia' {next_url}")
+data_form = {
+    "listacom": "BERGAMO Territorio-BG"
+}
+loggato = session.post(next_url, data=data_form)
+print("➡️ Conferma Data Richiesta Form:", loggato.status_code)
+
+with open("step8_provincia.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+# <li><a href="/Visure/SceltaLink.do?lista=IMM&amp;codUfficio=BG">Immobile</a></li>	
+
+next_url = "https://portalebanchedatij.visura.it/Visure/SceltaLink.do?lista=IMM&codUfficio=BG"
+print(f"URL page for selecting 'IMMOBILE' {next_url}")
+data_form = {
+    "listacom": "BERGAMO Territorio-BG"
+}
+loggato = session.get(next_url)
+print("➡️ Conferma Data Richiesta Form:", loggato.status_code)
+
+with open("step9_IMMOBILE.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
+# value="C894#COLOGNO AL SERIO#0#0"
+"""
+action="/Visure/vimm/AssenzaSubalterno.do"
+"""
+
+next_url = "https://portalebanchedatij.visura.it/Visure/vimm/AssenzaSubalterno.do"
+print(f"URL page for selecting 'IMMOBILE' {next_url}")
+data_form = {
+    "confAssSub": "Conferma",
+    "denomComune" : "C894#COLOGNO AL SERIO#0#0",
+    "nomeComune": "COLOGNO AL SERIO",
+    "codiceComune": "C894",
+    "tipoCatasto": "T",
+    "sezione" : "",
+    "tipoIdentificativo": "d",
+    "sezUrb": "",
+    "foglio": "09",
+    "particella1": "5731",
+    "particella2": "",
+    "subalterno1" : "",
+    "subalterno2" : "",
+    "tipoDenuncia" : "",
+    "numero1": "",
+    "anno" : "",
+    "scelta": "Ricerca"
+}
+loggato = session.post(next_url, data=data_form)
+print("➡️ Conferma Data Richiesta Form:", loggato.status_code)
+
+with open("step10_RICHIESTA.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
+# SceltaVisuraImmSoggForm
+# /Visure/vimm/SceltaVisuraImmSoggIMM.do
+
+soup = BeautifulSoup(loggato.text, "html.parser")
+form = soup.find("form", attrs={"action":"/Visure/vimm/SceltaVisuraImmSoggIMM.do"})
+
+if not form:
+    print("⚠️ Form from VISURE CATASTALI not found")
+else:
+    next_url = "https://portalebanchedatij.visura.it/" + form["action"]
+    form_data = {}
+    for inp in form.find_all("input"):
+        name = inp.get("name")
+        value = inp.get("value", "")
+        if name:
+            form_data[name] = value
+    
+    print(f"✅ Form data got it from portalebanchedatij.\n {form_data}")
+
+next_url = "https://portalebanchedatij.visura.it/Visure/vimm/SceltaIntestatiIMM.do"
+print(f"INTESTATI {next_url}")
+"""
+data_form = {
+    "visImmSel": form_data["visImmSel"],
+    "intestati": 'Intestati',
+    'visuraImm': '', 
+    'partita': ''
+}
+"""
+loggato = session.post(next_url, data="")
+print("➡️ Conferma INTESTATI Form:", loggato.status_code)
+
+with open("step11_INTESTATI.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
 
 # Close Session ❌
 close_session_url = "https://portalebanchedatij.visura.it/ECMBKE/Session/Terminate"
@@ -129,7 +222,7 @@ close_session_form = {
 loggato = session.post(close_session_url, data=close_session_form)
 print("➡️ Session close status:", loggato.status_code)
 
-with open("step8_close.html", "w", encoding="utf-8") as f:
+with open("last_step_close.html", "w", encoding="utf-8") as f:
     f.write(loggato.text)
 
 
