@@ -9,8 +9,8 @@ session = requests.Session()
 # -----------------------------
 login_url = "https://portaleingmonza.visura.it/authenticateNuovoVisura.do"
 login_data = {
-    "userName": "",
-    "password": ""
+    "userName": "TRMGROUPSRL",
+    "password": "VISURgroup$09"
 }
 
 resp_login = session.post(login_url, data=login_data)
@@ -130,7 +130,17 @@ print("➡️ Conferma Servizi Form:", loggato.status_code)
 with open("step7_conferma.html", "w", encoding="utf-8") as f:
     f.write(loggato.text)
 
+close_session_url = "https://portaleingmonza.visura.it/homepageAreeTematicheAction.do"
+print(f"URL Page for closing session {next_url}")
+loggato = session.get(next_url)
+print("➡️ Session close status:", loggato.status_code)
+
+with open("step8_close.html", "w", encoding="utf-8") as f:
+    f.write(loggato.text)
+
+
 """
+"https://portaleingmonza.visura.it/homepageAreeTematicheAction.do"
     resp_next = session.post(next_url, data=form_data)
     print("➡️ Step 5 SceltaLink.do status:", resp_next.status_code)
 
