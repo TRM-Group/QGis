@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="it">
@@ -80,9 +81,8 @@
 		
 
 		
-			<title>Home dei Servizi</title>
-			
-		
+		<title>Elenco immobili</title>
+	
 		
 		<script type="text/javascript" src="/js/browser_detection.js"></script>
 		<script type="text/javascript" src="/js/browser_close.js"></script>
@@ -99,14 +99,12 @@
 		<div class="skiplink"><a href="#menuprinc">Menu principale</a> </div>
 		
 		<header role="banner" aria-label="Informazioni e strumenti utente">
+		   
+             
+                                   
+               
 
-		 
-		 
-						
-					
-		
-		
-		
+
 			<div id="agenzia-header">
 				<div class="container-fluid">
 					<div class="row">
@@ -127,15 +125,15 @@
 						<div class="col-xs-5 col-xl-6">
 							<div class="row header-links">
 								<div class="col-xs-10 col-sm-7">
-
-							 		
-																	
-							 	      	
-							 	      <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
-							   				
+									  
+                                                                                                 
+                                                         
+                                                     <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
+                                                               
+                                                
 									
-
 									<!--  -->
+								<!--	 <a class="apri_finestra" href=http://www.agenziaentrate.gov.it/wps/portal/entrate/ ><i class="fa fa-arrow-left"></i>Sito informativo</a>-->
 								</div>
 								<div class="col-xs-2 col-sm-5 text-right">
 									<a href="#"></a>
@@ -164,18 +162,19 @@
 	<div id="user-collapse" class="row"> <!-- attenzione tolta classe collapse  -->
 		
 		
-		
-		
 		 
-		 
-						
-					
+             
+                                   
+                            
+            
+            <div class="col-xs-12 text-right">
+                  
+            </div>
 		
-		<div class="col-xs-12 text-right">
-			
-
-  		</div>
-	</div>
+		<!-- <div class="col-xs-12 text-right">
+			<a class="btn btn-primary" href="/Servizi/CloseSessions"><i class="fa fa-sign-out"></i>Esci</a>
+		</div> -->
+  	</div>
 </div>
 						</div>
 			   		</div>
@@ -228,68 +227,85 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-3 col-xl-2">
-						<nav role="navigation" aria-label='Menu della sezione Servizi'>
-							<h1 class="sr-only">Menu della sezione Servizi</h1>
-							<!-- Se il menu e' a tre livelli: -->
-							<!-- riportare come titolo del Menu di sezione la voce di secondo livello del Menu principale -->
-							<div id="menu-left-title">
-								<span>Servizi</span>
-<!-- 								<a href="#menu-left" data-toggle="collapse" class="visible-xs collapsed"> -->
-<!-- 									<i class="fa fa-lg fa-pull-right"></i> -->
-<!-- 								</a> -->
-							</div>
+						
+							
+								<nav role="navigation" aria-label='Menu della sezione Visure Catastali'>
+									<h1 class="sr-only">Menu della sezione Visure Catastali</h1>
+									<div id="menu-left-title">
+										<span>Visure catastali</span>
+									</div>
+									<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+
+
+
+
+
+	
+
+		<ul id="menu-left" class="nav">
+		 	
+			
+			
+			
+				
+				
+						
+					<li><a href="/Visure/SceltaLink.do?lista=PF&amp;codUfficio=BG">Persona fisica</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=PNF&amp;codUfficio=BG">Persona giuridica</a></li>					
+				
+					<li><a href="/Visure/SceltaLink.do?lista=IMM&amp;codUfficio=BG">Immobile</a></li>					
+				
+					<li><a href="/Visure/SceltaLink.do?lista=IND&amp;codUfficio=BG">Indirizzo</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=PART&amp;codUfficio=BG">Partita</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=EIMM&amp;codUfficio=BG">Elenco immobili</a></li>	
+	
+					<li><a href="/Visure/SceltaLink.do?lista=NOTA&amp;codUfficio=BG">Nota</a></li>
+				
+					<li><a href="/Visure/SceltaLink.do?lista=EM&amp;codUfficio=BG">Mappa</a></li>
+						
+					
+					
+					
+						
+					<li><a href="/Visure/SceltaLink.do?lista=FID&amp;codUfficio=BG">Punti fiduciali</a></li>	
+						
+					
+					
+						
+					<li><a href="/VisureNew/SwitchWebApp.do?lista=ELPL&amp;cod=BG&amp;desc=BERGAMO Territorio">Elaborato Planimetrico</a></li>	
+					
+						 
+					<li><a href="/Visure/RiepilogoVisure/UtentiRiepilogoVisure.do">Riepilogo Visure</a></li>
+					
+				
+			
+			
+			<li><a href="/Visure/SceltaServizio.do?tipo=/T/TM/VCVC_">Cambia Ufficio</a></li>
+			
+			
+				<li><a href="/Visure/SceltaLink.do?lista=ISP&amp;codUfficio=BG&amp;tipoRicerca=IMM">Passa a Ispezioni</a></li>
+			
+			
+   	        
+			<li><a href="/Servizi/ConsultazioneRichieste.do?metodo=lista&amp;numConv=1043111&amp;apertura=T" onclick="NewWindow(this.href,'richieste');return false;"  title="(link esterno: si apre in una nuova finestra)">Richieste</a ></li>			
+			<li><a href="/Visure/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a></li>			
+		</ul>
+
+		
+					
+
+								</nav>
 							
 							
-
-
-<!-- SISTER -->
-
-
-<!-- Servizi -->
-
-	<ul id="menu-left" class="nav">
-	 	
-		
-		
-		
-		
-	    	
-	   		
-	   			<li data-active="Consultazioni e Certificazioni">
-	   				<a href="/Servizi/SceltaServizio.do?area=Consultazioni e Certificazioni">Consultazioni e Certificazioni</a>
-   				</li>
-	   		
-	   	
-	    	
-	   		
-	   			<li data-active="Gestione Utenza">
-	   				<a href="/Servizi/SceltaServizio.do?area=Gestione Utenza">Gestione Utenza</a>
-   				</li>
-	   		
-	   	
-	   	
-	   	
-		
-		<li data-active="Assistenza">
-			<a href="/Servizi/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a>
-		</li>
-	</ul>
-
-
-							
-						<!-- Voce espandibile -->
-					<!-- 	<li class="submenu">
-							<a href="#submenu-1" class="collapsed" data-toggle="collapse">
-								Voce 3
-							</a>
-							<ul id="submenu-1" class="nav collapse" aria-hidden="false">
-								<li><a href="#">Voce 3.1</a></li>
-								<li><a href="#">Voce 3.2</a></li>
-								<li><a href="#">Voce 3.3</a></li>
-							</ul>
-						</li> -->
-							
-						</nav>
+						
 					</div>
 					<div class="col-xs-9 col-xl-10">
 						<div id="contenitore">
@@ -299,7 +315,11 @@
 								<div id="colonna1">
 									<ul class="breadcrumb">
 		              					<span>Ti trovi in:</span> 
-		              										Home dei Servizi
+		              					<a href="/Servizi/index.jsp">Home dei Servizi</a> / 					<A href="/Visure/SceltaServizio.do?tipo=/T/TM/VCVC_" class="" style="">Visure</A>
+			/ 
+					<A href="/Visure/vimm/datiRicercaImm.jsp" class="" style="">Ricerca per immobile</A>
+			/ 
+					Elenco immobili
 
 									</ul>
 
@@ -311,15 +331,29 @@
 	
 		
 		
-		
-			<div class="utenteVuoto">
+			<div class="utente">
 				<div class="utenteSinistra">
+					
+					
+					
+						
+						
+							
+						
+						Convenzione: <strong>VISURA SPA (CONSULTAZIONI - PROFILO B)</strong>
+						
+						<br>Codice di Richiesta: <strong>C00013792007</strong>
+						
+					
 				</div>
 				<div class="chiudiSessione">
 					
 				</div>
 				<div class="clearRight"> </div>
 			</div>
+			
+		
+		
 		
 	
 	
@@ -330,72 +364,266 @@
 										<a id="contenuto" name="contenuto"></a>
 										
 										
-							
-							<br>
-							<div class="errore_txt">
-								<strong> 
-									
-										Benvenuto	
-												
-										
-										
-									 	
-									PAOLO&nbsp;GALBIATI,&nbsp;il tuo ultimo accesso è stato il&nbsp;15/10/2025 18:06.<br>
-									
-								</strong>Totale  Utenti connessi: 6097 
-							</div>
-							
-							
-							 
-							
-							
-							
+<script type="text/javascript" src="/js/modalBox.js" ></script>
+<link rel="stylesheet" href="/css/modalBox.css" type="text/css">										
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+<html>
+	<head>
+		<title>intestazione</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="GENERATOR" content="Rational Application Developer">
+	</head>
+<body>
+	
+			<br/>
+			<h1>Ufficio provinciale di: BERGAMO Territorio</h1>
+			<br/>
+			
+			
+			
+			
+			
+			
+			
+				<strong>Situazione aggiornata al :
+				15/10/2025 </strong>
+			
+			
+			
+			
+				
+				
+			
+
+
+
+
+ 
+</body>
+</html>
+
+		<br>
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//IT">
+	
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>riepilogoVisure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="GENERATOR" content="Rational Application Developer">
+</head>
+<body>
+    
+    
+	
+	
+	
+	
+	
+	
+    
+	
+	
+	
+	
+	
+	
+	
+     
+  
+	<br>
+	<fieldset>
+		<legend class="blue">Dati della ricerca</legend>
+		
+<table>
+	<tr>
+		<td>
+			
+				
+					
+			  		      Catasto: &nbsp;<strong style="color: #006">Terreni</strong>
+					
+					
+         	
+         </td>
+			
+	</tr>
+	<!--<tr>
+		<td>Situazione Aggiornata al &nbsp;:&nbsp;<strong style="color: #006">15/10/2025</strong></td>
+	</tr>-->
+	
+	<tr> 
+		<td>Comune di:&nbsp;
+		
+		 
+			
+			      <strong> COLOGNO AL SERIO</strong>
+			   
+		  
+		  Codice:&nbsp;
+		
+		 
+			
+			      <strong> C894</strong>
+			   
+		  
+		  
+		  
+	  <!--    
+	    -->
+	    
+
+	   
+	    <br>
+	    
+	   
+	    Foglio:
+	     <strong >09</strong>
+	   
+	    
+	    Particella:
+	      <strong>5731</strong>
+	      
+	    
+	    
+	     
+	    
+	    
+	    &nbsp;
+	    
+	    &nbsp;
+	    
+	     <br>
+	      
+				Immobili individuati:<strong> 1</strong>
+				
+			<BR>
+					
+	    </td>
+	</tr>
+	
+</table>
+
+</fieldset>
+
+</body>
+</html>
+
+		<br>
+		<link rel="stylesheet" href="/css/modalBox.css" type="text/css">					
+		<script type="text/javascript" src="/js_sister/all_sg.js"></script>
+		<script type="text/javascript" src="/js/closejs.js"></script>
+		<script type="text/javascript" src="/js/modalBox.js" ></script>
+		
+		
+				
+		
+		
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		<form name="SceltaVisuraImmSoggForm" method="post" action="/Visure/vimm/SceltaVisuraImmSoggIMM.do">
+			<div class="msg_omocodici"></div>
+			<br>
+			<fieldset><legend class="blue">Elenco Immobili</legend> 
+			
+			
+				<table align="left" class="listaIsp4">
+					<tr>
+						<th></th>
+						<th>Foglio</th>
+						<th>Particella</th>
+						<th>Sub</th>
+						<th>Qualit&agrave;</th>
+						<th>Classe</th>
+						<th>ha</th>
+						<th>are</th>
+						<th>ca</th>
+						<th>Reddito dominicale</th>
+						<th>Reddito agrario</th>
+						<th>Partita</th>
+						<th>Porzioni<IMG title="fare click su SI per visualizzare le Porzioni" src="/img/informazioni.gif"></th>
+					</tr>
+					<tbody>
 						
 							
-								<form name="PrivacyFB" method="post" action="/Servizi/InformativaPrivacy.do">
-	
-									<h2 class="notifiche"><i class="fa fa-lock" aria-hidden="true"></i>Informativa trattamento dei dati personali</h2>
-									<p align="left">
-											Gentile Utente,<br>con l'informativa presente nell'allegato riportato di seguito l'Agenzia delle Entrate spiega come utilizza i dati raccolti che Lei fornisce per usufruire del servizio telematico SISTer;  
-											<br><strong>Attenzione:</strong> La mancata conferma di presa visione non consentirà all'Agenzia l'erogazione del servizio richiesto.
-											<br><a href="/doc/informativaGDPR.pdf" onclick="NewWindow(this.href,'privacy');return false;"  title="informativa GDPR">Scarica l'informativa sul trattamento dei dati personali da questo link</a>
-									</p>
+							
+							
+								
+							
+							
+							<tr class="rigascura">
+								
+									<td><input type="radio" property="visImmSel" value="388326#388326#T#9#5731#C894#0002121## #COLOGNO AL SERIO" checked /></td>
 									
+									<input type="hidden" name="visImmSel" value="388326#388326#T#9#5731#C894#0002121## #COLOGNO AL SERIO" />
 								
-								<input type="submit" name="submit" value="Conferma">
-								<input type="submit" name="submit" value="Annulla">
-							 </form>
-							 <br>
-							 
+								
+								<td>9</td>
+								<td>5731</td>
+								<td></td>
+								<td>SEM IRR ARB </td>
+								<td>2</td>
+								<td>0</td>
+								<td>46</td>
+								<td>70</td>
+								<td class="listaIsp5" align="left">Euro: 38,59  (*)</td>
+								<td class="listaIsp5" align="left">Euro: 39,80  </td>
+								<td>0002121</td>
+								<td><a href="/Visure/ImmobiliPorz.do?idUiu=388326&catasto=T&fogliotipo=9&partnum=5731&codCom=C894&decodComune=COLOGNO AL SERIO&subanno=" title="fare click per visualizzare le porzioni"></a>
 
-							
-															
-								
-									
-															
- 							
-
-							
-							<h2 class="primoPiano">Primo piano</h2>
-							<ul>
-								
-									<li><strong></strong> - <strong><a class="blu_titolo_notizia">Non sono presenti news</a></strong> <br/>
-									</li>
-								 
-							</ul>
-							
-							
-							
-							
-							<br>
-							
-								
-							
-							 
-							 	
-							 
-							  
+								</td>
+							</tr>
+						
+					</tbody>
+				</table>
+			 </fieldset>
+			
+			
+				<p>&nbsp;&nbsp;&nbsp;I redditi contraddistinti da (*) indicano
+				che il reddito dominicale &egrave; stato calcolato tenendo conto delle
+				deduzioni.</p>
+			
+			<table>
+				<tr>
+					<td>
+						<input type="submit" name="intestati" value="Intestati">
+						<input type="submit" name="visuraImm" value="Visura Per Immobile">
+						<input type="submit" name="partita" value="Ricerca per Partita">
+						 
+											
+						
 					
+					 
+					</form></td>
+					<td><form name="RicercaIMMForm" method="post" action="/Visure/vimm/IndietroDatiImm.do" onsubmit="this.indietro.disabled=true;">
+						<input type="submit" name="indietro" value="Indietro">
+					</form></td>
+				</tr>
+			</table>
+			<br>
+	
 									</div>
 								</div> <!-- Fine colonna 1 -->
 							</div>

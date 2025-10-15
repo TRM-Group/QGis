@@ -7,6 +7,7 @@
 	
 	
 	
+	
 
 	<head>
 		
@@ -79,7 +80,8 @@
 		
 
 		
-		<title>Scelta province</title>
+			<title>Home dei Servizi</title>
+			
 		
 		
 		<script type="text/javascript" src="/js/browser_detection.js"></script>
@@ -97,12 +99,14 @@
 		<div class="skiplink"><a href="#menuprinc">Menu principale</a> </div>
 		
 		<header role="banner" aria-label="Informazioni e strumenti utente">
-		     
-             
-                                   
-               
-	
 
+		 
+		 
+						
+					
+		
+		
+		
 			<div id="agenzia-header">
 				<div class="container-fluid">
 					<div class="row">
@@ -123,15 +127,15 @@
 						<div class="col-xs-5 col-xl-6">
 							<div class="row header-links">
 								<div class="col-xs-10 col-sm-7">
-								  
-                                                                                                 
-                                                         
-                                                     <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
-                                                               
-                                                
-								
-								<!-- <a class="apri_finestra" href=http://www.agenziaentrate.gov.it/wps/portal/entrate/ ><i class="fa fa-arrow-left"></i>Sito informativo</a>-->
-								<!--  -->
+
+							 		
+																	
+							 	      	
+							 	      <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
+							   				
+									
+
+									<!--  -->
 								</div>
 								<div class="col-xs-2 col-sm-5 text-right">
 									<a href="#"></a>
@@ -160,19 +164,18 @@
 	<div id="user-collapse" class="row"> <!-- attenzione tolta classe collapse  -->
 		
 		
-		 
-             
-                                   
-                            
-            
-            <div class="col-xs-12 text-right">
-                  
-            </div>
 		
-		<!-- <div class="col-xs-12 text-right">
-			<a class="btn btn-primary" href="/Servizi/CloseSessions"><i class="fa fa-sign-out"></i>Esci</a>
-		</div> -->
-  	</div>
+		
+		 
+		 
+						
+					
+		
+		<div class="col-xs-12 text-right">
+			
+
+  		</div>
+	</div>
 </div>
 						</div>
 			   		</div>
@@ -225,14 +228,18 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-3 col-xl-2">
-						
+						<nav role="navigation" aria-label='Menu della sezione Servizi'>
+							<h1 class="sr-only">Menu della sezione Servizi</h1>
+							<!-- Se il menu e' a tre livelli: -->
+							<!-- riportare come titolo del Menu di sezione la voce di secondo livello del Menu principale -->
+							<div id="menu-left-title">
+								<span>Servizi</span>
+<!-- 								<a href="#menu-left" data-toggle="collapse" class="visible-xs collapsed"> -->
+<!-- 									<i class="fa fa-lg fa-pull-right"></i> -->
+<!-- 								</a> -->
+							</div>
 							
-								<nav role="navigation" aria-label='Menu della sezione Servizi'>
-									<h1 class="sr-only">Menu della sezione Servizi</h1>
-									<div id="menu-left-title">
-										<span>Servizi</span>
-									</div>
-									
+							
 
 
 <!-- SISTER -->
@@ -247,34 +254,21 @@
 		
 		
 	    	
-				
-				
-					<li data-active="Consultazioni e Certificazioni">
-						<a href="/Servizi/SceltaServizio.do?area=Consultazioni e Certificazioni">Consultazioni e Certificazioni</a>
-					</li> 
-				
 	   		
+	   			<li data-active="Consultazioni e Certificazioni">
+	   				<a href="/Servizi/SceltaServizio.do?area=Consultazioni e Certificazioni">Consultazioni e Certificazioni</a>
+   				</li>
 	   		
 	   	
 	    	
-				
-				
-					<li data-active="Gestione Utenza">
-						<a href="/Servizi/SceltaServizio.do?area=Gestione Utenza">Gestione Utenza</a>
-					</li> 
-				
 	   		
+	   			<li data-active="Gestione Utenza">
+	   				<a href="/Servizi/SceltaServizio.do?area=Gestione Utenza">Gestione Utenza</a>
+   				</li>
 	   		
 	   	
 	   	
 	   	
-	   		<li data-active="CambiaConvenzione">
-	   			<a href="/Visure/SceltaServizio.do?conv=R">Cambia convenzione</a>
-   			</li>
-			<li data-active="Richieste">
-				<a href="/Servizi/ConsultazioneRichieste.do?metodo=lista&amp;numConv=1043111&amp;apertura=T" onclick="NewWindow(this.href,'richieste');return false;"  title="(link esterno: si apre in una nuova finestra)">Richieste</a>
-			</li>
-		
 		
 		<li data-active="Assistenza">
 			<a href="/Servizi/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a>
@@ -282,11 +276,20 @@
 	</ul>
 
 
-								</nav>
 							
+						<!-- Voce espandibile -->
+					<!-- 	<li class="submenu">
+							<a href="#submenu-1" class="collapsed" data-toggle="collapse">
+								Voce 3
+							</a>
+							<ul id="submenu-1" class="nav collapse" aria-hidden="false">
+								<li><a href="#">Voce 3.1</a></li>
+								<li><a href="#">Voce 3.2</a></li>
+								<li><a href="#">Voce 3.3</a></li>
+							</ul>
+						</li> -->
 							
-						
-							
+						</nav>
 					</div>
 					<div class="col-xs-9 col-xl-10">
 						<div id="contenitore">
@@ -296,7 +299,7 @@
 								<div id="colonna1">
 									<ul class="breadcrumb">
 		              					<span>Ti trovi in:</span> 
-		              					<a href="/Servizi/index.jsp">Home dei Servizi</a> / 					Visure
+		              										Home dei Servizi
 
 									</ul>
 
@@ -308,29 +311,15 @@
 	
 		
 		
-			<div class="utente">
+		
+			<div class="utenteVuoto">
 				<div class="utenteSinistra">
-					
-					
-					
-						
-						
-							
-						
-						Convenzione: <strong>VISURA SPA (CONSULTAZIONI - PROFILO B)</strong>
-						
-						<br>Codice di Richiesta: <strong>C00013792007</strong>
-						
-					
 				</div>
 				<div class="chiudiSessione">
 					
 				</div>
 				<div class="clearRight"> </div>
 			</div>
-			
-		
-		
 		
 	
 	
@@ -341,228 +330,72 @@
 										<a id="contenuto" name="contenuto"></a>
 										
 										
-							<form name="DataRichiestaForm" method="post" action="/Visure/DataRichiesta.do">					
-								<fieldset>
-									<legend class="blue">Selezione Ufficio provinciale <br></legend>
+							
+							<br>
+							<div class="errore_txt">
+								<strong> 
 									
-									<table>
-										<tr> 
-											<td><label for="listacom">Ufficio provinciale di: </label></td>
-											<td><select name="listacom"><option value=" "> </option>
-													
-														<option value=" NAZIONALE-IT">NAZIONALE</option>
-													
-														<option value="AGRIGENTO Territorio-AG">AGRIGENTO Territorio</option>
-													
-														<option value="ALESSANDRIA Territorio-AL">ALESSANDRIA Territorio</option>
-													
-														<option value="ANCONA Territorio-AN">ANCONA Territorio</option>
-													
-														<option value="AOSTA Territorio-AO">AOSTA Territorio</option>
-													
-														<option value="AREZZO Territorio-AR">AREZZO Territorio</option>
-													
-														<option value="ASCOLI PICENO Territorio-AP">ASCOLI PICENO Territorio</option>
-													
-														<option value="ASTI Territorio-AT">ASTI Territorio</option>
-													
-														<option value="AVELLINO Territorio-AV">AVELLINO Territorio</option>
-													
-														<option value="BARI Territorio-BA">BARI Territorio</option>
-													
-														<option value="BELLUNO Territorio-BL">BELLUNO Territorio</option>
-													
-														<option value="BENEVENTO Territorio-BN">BENEVENTO Territorio</option>
-													
-														<option value="BERGAMO Territorio-BG">BERGAMO Territorio</option>
-													
-														<option value="BIELLA Territorio-BI">BIELLA Territorio</option>
-													
-														<option value="BOLOGNA Territorio-BO">BOLOGNA Territorio</option>
-													
-														<option value="BRESCIA Territorio-BS">BRESCIA Territorio</option>
-													
-														<option value="BRINDISI Territorio-BR">BRINDISI Territorio</option>
-													
-														<option value="CAGLIARI Territorio-CA">CAGLIARI Territorio</option>
-													
-														<option value="CALTANISSETTA Territorio-CL">CALTANISSETTA Territorio</option>
-													
-														<option value="CAMPOBASSO Territorio-CB">CAMPOBASSO Territorio</option>
-													
-														<option value="CASERTA Territorio-CE">CASERTA Territorio</option>
-													
-														<option value="CATANIA Territorio-CT">CATANIA Territorio</option>
-													
-														<option value="CATANZARO Territorio-CZ">CATANZARO Territorio</option>
-													
-														<option value="CHIETI Territorio-CH">CHIETI Territorio</option>
-													
-														<option value="COMO Territorio-CO">COMO Territorio</option>
-													
-														<option value="COSENZA Territorio-CS">COSENZA Territorio</option>
-													
-														<option value="CREMONA Territorio-CR">CREMONA Territorio</option>
-													
-														<option value="CROTONE Territorio-KR">CROTONE Territorio</option>
-													
-														<option value="CUNEO Territorio-CN">CUNEO Territorio</option>
-													
-														<option value="ENNA Territorio-EN">ENNA Territorio</option>
-													
-														<option value="FERRARA Territorio-FE">FERRARA Territorio</option>
-													
-														<option value="FIRENZE Territorio-FI">FIRENZE Territorio</option>
-													
-														<option value="FOGGIA Territorio-FG">FOGGIA Territorio</option>
-													
-														<option value="FORLI Territorio-FO">FORLI Territorio</option>
-													
-														<option value="FROSINONE Territorio-FR">FROSINONE Territorio</option>
-													
-														<option value="GENOVA Territorio-GE">GENOVA Territorio</option>
-													
-														<option value="GORIZIA Territorio-GO">GORIZIA Territorio</option>
-													
-														<option value="GROSSETO Territorio-GR">GROSSETO Territorio</option>
-													
-														<option value="IMPERIA Territorio-IM">IMPERIA Territorio</option>
-													
-														<option value="ISERNIA Territorio-IS">ISERNIA Territorio</option>
-													
-														<option value="LA SPEZIA Territorio-SP">LA SPEZIA Territorio</option>
-													
-														<option value="LATINA Territorio-LT">LATINA Territorio</option>
-													
-														<option value="LECCE Territorio-LE">LECCE Territorio</option>
-													
-														<option value="LECCO Territorio-LC">LECCO Territorio</option>
-													
-														<option value="LIVORNO Territorio-LI">LIVORNO Territorio</option>
-													
-														<option value="LODI Territorio-LO">LODI Territorio</option>
-													
-														<option value="LUCCA Territorio-LU">LUCCA Territorio</option>
-													
-														<option value="L`AQUILA Territorio-AQ">L`AQUILA Territorio</option>
-													
-														<option value="MACERATA Territorio-MC">MACERATA Territorio</option>
-													
-														<option value="MANTOVA Territorio-MN">MANTOVA Territorio</option>
-													
-														<option value="MASSA Territorio-MS">MASSA Territorio</option>
-													
-														<option value="MATERA Territorio-MT">MATERA Territorio</option>
-													
-														<option value="MESSINA Territorio-ME">MESSINA Territorio</option>
-													
-														<option value="MILANO Territorio-MI">MILANO Territorio</option>
-													
-														<option value="MODENA Territorio-MO">MODENA Territorio</option>
-													
-														<option value="NAPOLI Territorio-NA">NAPOLI Territorio</option>
-													
-														<option value="NOVARA Territorio-NO">NOVARA Territorio</option>
-													
-														<option value="NUORO Territorio-NU">NUORO Territorio</option>
-													
-														<option value="ORISTANO Territorio-OR">ORISTANO Territorio</option>
-													
-														<option value="PADOVA Territorio-PD">PADOVA Territorio</option>
-													
-														<option value="PALERMO Territorio-PA">PALERMO Territorio</option>
-													
-														<option value="PARMA Territorio-PR">PARMA Territorio</option>
-													
-														<option value="PAVIA Territorio-PV">PAVIA Territorio</option>
-													
-														<option value="PERUGIA Territorio-PG">PERUGIA Territorio</option>
-													
-														<option value="PESARO Territorio-PS">PESARO Territorio</option>
-													
-														<option value="PESCARA Territorio-PE">PESCARA Territorio</option>
-													
-														<option value="PIACENZA Territorio-PC">PIACENZA Territorio</option>
-													
-														<option value="PISA Territorio-PI">PISA Territorio</option>
-													
-														<option value="PISTOIA Territorio-PT">PISTOIA Territorio</option>
-													
-														<option value="PORDENONE Territorio-PN">PORDENONE Territorio</option>
-													
-														<option value="POTENZA Territorio-PZ">POTENZA Territorio</option>
-													
-														<option value="PRATO Territorio-PO">PRATO Territorio</option>
-													
-														<option value="RAGUSA Territorio-RG">RAGUSA Territorio</option>
-													
-														<option value="RAVENNA Territorio-RA">RAVENNA Territorio</option>
-													
-														<option value="REGGIO CALABRIA Territorio-RC">REGGIO CALABRIA Territorio</option>
-													
-														<option value="REGGIO EMILIA Territorio-RE">REGGIO EMILIA Territorio</option>
-													
-														<option value="RIETI Territorio-RI">RIETI Territorio</option>
-													
-														<option value="RIMINI Territorio-RN">RIMINI Territorio</option>
-													
-														<option value="ROMA Territorio-RM">ROMA Territorio</option>
-													
-														<option value="ROVIGO Territorio-RO">ROVIGO Territorio</option>
-													
-														<option value="SALERNO Territorio-SA">SALERNO Territorio</option>
-													
-														<option value="SASSARI Territorio-SS">SASSARI Territorio</option>
-													
-														<option value="SAVONA Territorio-SV">SAVONA Territorio</option>
-													
-														<option value="SIENA Territorio-SI">SIENA Territorio</option>
-													
-														<option value="SIRACUSA Territorio-SR">SIRACUSA Territorio</option>
-													
-														<option value="SONDRIO Territorio-SO">SONDRIO Territorio</option>
-													
-														<option value="TARANTO Territorio-TA">TARANTO Territorio</option>
-													
-														<option value="TERAMO Territorio-TE">TERAMO Territorio</option>
-													
-														<option value="TERNI Territorio-TR">TERNI Territorio</option>
-													
-														<option value="TORINO Territorio-TO">TORINO Territorio</option>
-													
-														<option value="TRAPANI Territorio-TP">TRAPANI Territorio</option>
-													
-														<option value="TREVISO Territorio-TV">TREVISO Territorio</option>
-													
-														<option value="TRIESTE Territorio-TS">TRIESTE Territorio</option>
-													
-														<option value="UDINE Territorio-UD">UDINE Territorio</option>
-													
-														<option value="VARESE Territorio-VA">VARESE Territorio</option>
-													
-														<option value="VENEZIA Territorio-VE">VENEZIA Territorio</option>
-													
-														<option value="VERBANIA Territorio-VB">VERBANIA Territorio</option>
-													
-														<option value="VERCELLI Territorio-VC">VERCELLI Territorio</option>
-													
-														<option value="VERONA Territorio-VR">VERONA Territorio</option>
-													
-														<option value="VIBO VALENTIA Territorio-VV">VIBO VALENTIA Territorio</option>
-													
-														<option value="VICENZA Territorio-VI">VICENZA Territorio</option>
-													
-														<option value="VITERBO Territorio-VT">VITERBO Territorio</option></select>
-											</td>
-											<td width="300" align="right">
-												<a href="/Visure/vpf/ElencoUffici.do" target="_blank">Consulta elenco degli uffici</a>
-											</td>
-										</tr> 
-									</table>
-								</fieldset>
-								<input type="submit" value="Applica">
-							</form>
+										Benvenuto	
+												
+										
+										
+									 	
+									PAOLO&nbsp;GALBIATI,&nbsp;il tuo ultimo accesso è stato il&nbsp;15/10/2025 23:37.<br>
+									
+								</strong>Totale  Utenti connessi: 455 
+							</div>
+							
+							
+							 
+							
+							
+							
 						
+							
+								<form name="PrivacyFB" method="post" action="/Servizi/InformativaPrivacy.do">
+	
+									<h2 class="notifiche"><i class="fa fa-lock" aria-hidden="true"></i>Informativa trattamento dei dati personali</h2>
+									<p align="left">
+											Gentile Utente,<br>con l'informativa presente nell'allegato riportato di seguito l'Agenzia delle Entrate spiega come utilizza i dati raccolti che Lei fornisce per usufruire del servizio telematico SISTer;  
+											<br><strong>Attenzione:</strong> La mancata conferma di presa visione non consentirà all'Agenzia l'erogazione del servizio richiesto.
+											<br><a href="/doc/informativaGDPR.pdf" onclick="NewWindow(this.href,'privacy');return false;"  title="informativa GDPR">Scarica l'informativa sul trattamento dei dati personali da questo link</a>
+									</p>
+									
+								
+								<input type="submit" name="submit" value="Conferma">
+								<input type="submit" name="submit" value="Annulla">
+							 </form>
+							 <br>
+							 
+
+							
+															
+								
+									
+															
+ 							
+
+							
+							<h2 class="primoPiano">Primo piano</h2>
+							<ul>
+								
+									<li><strong></strong> - <strong><a class="blu_titolo_notizia">Non sono presenti news</a></strong> <br/>
+									</li>
+								 
+							</ul>
+							
+							
+							
+							
+							<br>
+							
+								
+							
+							 
+							 	
+							 
+							  
+					
 									</div>
 								</div> <!-- Fine colonna 1 -->
 							</div>

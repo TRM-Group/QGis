@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 
 <html lang="it">
-	
 	
 	
 	
@@ -81,8 +79,8 @@
 		
 
 		
-		<title>Elenco immobili</title>
-	
+		<title>Scelta province</title>
+		
 		
 		<script type="text/javascript" src="/js/browser_detection.js"></script>
 		<script type="text/javascript" src="/js/browser_close.js"></script>
@@ -99,11 +97,11 @@
 		<div class="skiplink"><a href="#menuprinc">Menu principale</a> </div>
 		
 		<header role="banner" aria-label="Informazioni e strumenti utente">
-		   
+		     
              
                                    
                
-
+	
 
 			<div id="agenzia-header">
 				<div class="container-fluid">
@@ -125,15 +123,15 @@
 						<div class="col-xs-5 col-xl-6">
 							<div class="row header-links">
 								<div class="col-xs-10 col-sm-7">
-									  
+								  
                                                                                                  
                                                          
                                                      <a href=http://www.agenziaentrate.gov.it/wps/portal/entrate/  target="_blank"><i class="fa fa-arrow-left"></i>Sito informativo</a>
                                                                
                                                 
-									
-									<!--  -->
-								<!--	 <a class="apri_finestra" href=http://www.agenziaentrate.gov.it/wps/portal/entrate/ ><i class="fa fa-arrow-left"></i>Sito informativo</a>-->
+								
+								<!-- <a class="apri_finestra" href=http://www.agenziaentrate.gov.it/wps/portal/entrate/ ><i class="fa fa-arrow-left"></i>Sito informativo</a>-->
+								<!--  -->
 								</div>
 								<div class="col-xs-2 col-sm-5 text-right">
 									<a href="#"></a>
@@ -229,83 +227,66 @@
 					<div class="col-xs-3 col-xl-2">
 						
 							
-								<nav role="navigation" aria-label='Menu della sezione Visure Catastali'>
-									<h1 class="sr-only">Menu della sezione Visure Catastali</h1>
+								<nav role="navigation" aria-label='Menu della sezione Servizi'>
+									<h1 class="sr-only">Menu della sezione Servizi</h1>
 									<div id="menu-left-title">
-										<span>Visure catastali</span>
+										<span>Servizi</span>
 									</div>
-									<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+									
 
 
+<!-- SISTER -->
 
 
-
+<!-- Servizi -->
 
-
-
-
-
-	
-
-		<ul id="menu-left" class="nav">
-		 	
-			
-			
-			
-				
-				
-						
-					<li><a href="/Visure/SceltaLink.do?lista=PF&amp;codUfficio=BG">Persona fisica</a></li>
-				
-					<li><a href="/Visure/SceltaLink.do?lista=PNF&amp;codUfficio=BG">Persona giuridica</a></li>					
-				
-					<li><a href="/Visure/SceltaLink.do?lista=IMM&amp;codUfficio=BG">Immobile</a></li>					
-				
-					<li><a href="/Visure/SceltaLink.do?lista=IND&amp;codUfficio=BG">Indirizzo</a></li>
-				
-					<li><a href="/Visure/SceltaLink.do?lista=PART&amp;codUfficio=BG">Partita</a></li>
-				
-					<li><a href="/Visure/SceltaLink.do?lista=EIMM&amp;codUfficio=BG">Elenco immobili</a></li>	
-	
-					<li><a href="/Visure/SceltaLink.do?lista=NOTA&amp;codUfficio=BG">Nota</a></li>
-				
-					<li><a href="/Visure/SceltaLink.do?lista=EM&amp;codUfficio=BG">Mappa</a></li>
-						
-					
-					
-					
-						
-					<li><a href="/Visure/SceltaLink.do?lista=FID&amp;codUfficio=BG">Punti fiduciali</a></li>	
-						
-					
-					
-						
-					<li><a href="/VisureNew/SwitchWebApp.do?lista=ELPL&amp;cod=BG&amp;desc=BERGAMO Territorio">Elaborato Planimetrico</a></li>	
-					
-						 
-					<li><a href="/Visure/RiepilogoVisure/UtentiRiepilogoVisure.do">Riepilogo Visure</a></li>
-					
-				
-			
-			
-			<li><a href="/Visure/SceltaServizio.do?tipo=/T/TM/VCVC_">Cambia Ufficio</a></li>
-			
-			
-				<li><a href="/Visure/SceltaLink.do?lista=ISP&amp;codUfficio=BG&amp;tipoRicerca=IMM">Passa a Ispezioni</a></li>
-			
-			
-   	        
-			<li><a href="/Servizi/ConsultazioneRichieste.do?metodo=lista&amp;numConv=1043111&amp;apertura=T" onclick="NewWindow(this.href,'richieste');return false;"  title="(link esterno: si apre in una nuova finestra)">Richieste</a ></li>			
-			<li><a href="/Visure/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a></li>			
-		</ul>
-
+	<ul id="menu-left" class="nav">
+	 	
 		
-					
+		
+		
+		
+	    	
+				
+				
+					<li data-active="Consultazioni e Certificazioni">
+						<a href="/Servizi/SceltaServizio.do?area=Consultazioni e Certificazioni">Consultazioni e Certificazioni</a>
+					</li> 
+				
+	   		
+	   		
+	   	
+	    	
+				
+				
+					<li data-active="Gestione Utenza">
+						<a href="/Servizi/SceltaServizio.do?area=Gestione Utenza">Gestione Utenza</a>
+					</li> 
+				
+	   		
+	   		
+	   	
+	   	
+	   	
+	   		<li data-active="CambiaConvenzione">
+	   			<a href="/Visure/SceltaServizio.do?conv=R">Cambia convenzione</a>
+   			</li>
+			<li data-active="Richieste">
+				<a href="/Servizi/ConsultazioneRichieste.do?metodo=lista&amp;numConv=1043111&amp;apertura=T" onclick="NewWindow(this.href,'richieste');return false;"  title="(link esterno: si apre in una nuova finestra)">Richieste</a>
+			</li>
+		
+		
+		<li data-active="Assistenza">
+			<a href="/Servizi/Assistenza?prof=1" onclick="NewWindow(this.href,'help');return false;"  title="(link esterno: si apre in una nuova finestra)">Assistenza</a>
+		</li>
+	</ul>
+
 
 								</nav>
 							
 							
 						
+							
 					</div>
 					<div class="col-xs-9 col-xl-10">
 						<div id="contenitore">
@@ -315,11 +296,7 @@
 								<div id="colonna1">
 									<ul class="breadcrumb">
 		              					<span>Ti trovi in:</span> 
-		              					<a href="/Servizi/index.jsp">Home dei Servizi</a> / 					<A href="/Visure/SceltaServizio.do?tipo=/T/TM/VCVC_" class="" style="">Visure</A>
-			/ 
-					<A href="/Visure/vimm/datiRicercaImm.jsp" class="" style="">Ricerca per immobile</A>
-			/ 
-					Elenco immobili
+		              					<a href="/Servizi/index.jsp">Home dei Servizi</a> / 					Visure
 
 									</ul>
 
@@ -364,266 +341,228 @@
 										<a id="contenuto" name="contenuto"></a>
 										
 										
-<script type="text/javascript" src="/js/modalBox.js" ></script>
-<link rel="stylesheet" href="/css/modalBox.css" type="text/css">										
-		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
-
-
-
-
-<html>
-	<head>
-		<title>intestazione</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<meta name="GENERATOR" content="Rational Application Developer">
-	</head>
-<body>
-	
-			<br/>
-			<h1>Ufficio provinciale di: BERGAMO Territorio</h1>
-			<br/>
-			
-			
-			
-			
-			
-			
-			
-				<strong>Situazione aggiornata al :
-				23/02/2022 </strong>
-			
-			
-			
-			
-				
-				
-			
-
-
-
-
- 
-</body>
-</html>
-
-		<br>
-		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//IT">
-	
-
-
-
-
-
-
-
-
-
-
-<html>
-<head>
-<title>riepilogoVisure</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta name="GENERATOR" content="Rational Application Developer">
-</head>
-<body>
-    
-    
-	
-	
-	
-	
-	
-	
-    
-	
-	
-	
-	
-	
-	
-	
-     
-  
-	<br>
-	<fieldset>
-		<legend class="blue">Dati della ricerca</legend>
-		
-<table>
-	<tr>
-		<td>
-			
-				
-					
-			  		      Catasto: &nbsp;<strong style="color: #006">Terreni</strong>
-					
-					
-         	
-         </td>
-			
-	</tr>
-	<!--<tr>
-		<td>Situazione Aggiornata al &nbsp;:&nbsp;<strong style="color: #006">15/10/2025</strong></td>
-	</tr>-->
-	
-	<tr> 
-		<td>Comune di:&nbsp;
-		
-		 
-			
-			      <strong> COLOGNO AL SERIO</strong>
-			   
-		  
-		  Codice:&nbsp;
-		
-		 
-			
-			      <strong> C894</strong>
-			   
-		  
-		  
-		  
-	  <!--    
-	    -->
-	    
-
-	   
-	    <br>
-	    
-	   
-	    Foglio:
-	     <strong >09</strong>
-	   
-	    
-	    Particella:
-	      <strong>5731</strong>
-	      
-	    
-	    
-	     
-	    
-	    
-	    &nbsp;
-	    
-	    &nbsp;
-	    
-	     <br>
-	      
-				Immobili individuati:<strong> 1</strong>
-				
-			<BR>
-					
-	    </td>
-	</tr>
-	
-</table>
-
-</fieldset>
-
-</body>
-</html>
-
-		<br>
-		<link rel="stylesheet" href="/css/modalBox.css" type="text/css">					
-		<script type="text/javascript" src="/js_sister/all_sg.js"></script>
-		<script type="text/javascript" src="/js/closejs.js"></script>
-		<script type="text/javascript" src="/js/modalBox.js" ></script>
-		
-		
-				
-		
-		
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		<form name="SceltaVisuraImmSoggForm" method="post" action="/Visure/vimm/SceltaVisuraImmSoggIMM.do">
-			<div class="msg_omocodici"></div>
-			<br>
-			<fieldset><legend class="blue">Elenco Immobili</legend> 
-			
-			
-				<table align="left" class="listaIsp4">
-					<tr>
-						<th></th>
-						<th>Foglio</th>
-						<th>Particella</th>
-						<th>Sub</th>
-						<th>Qualit&agrave;</th>
-						<th>Classe</th>
-						<th>ha</th>
-						<th>are</th>
-						<th>ca</th>
-						<th>Reddito dominicale</th>
-						<th>Reddito agrario</th>
-						<th>Partita</th>
-						<th>Porzioni<IMG title="fare click su SI per visualizzare le Porzioni" src="/img/informazioni.gif"></th>
-					</tr>
-					<tbody>
-						
-							
-							
-							
-								
-							
-							
-							<tr class="rigascura">
-								
-									<td><input type="radio" property="visImmSel" value="388326#388326#T#9#5731#C894#0002121## #COLOGNO AL SERIO" checked /></td>
+							<form name="DataRichiestaForm" method="post" action="/Visure/DataRichiesta.do">					
+								<fieldset>
+									<legend class="blue">Selezione Ufficio provinciale <br></legend>
 									
-									<input type="hidden" name="visImmSel" value="388326#388326#T#9#5731#C894#0002121## #COLOGNO AL SERIO" />
-								
-								
-								<td>9</td>
-								<td>5731</td>
-								<td></td>
-								<td>SEM IRR ARB </td>
-								<td>2</td>
-								<td>0</td>
-								<td>46</td>
-								<td>70</td>
-								<td class="listaIsp5" align="left">Euro: 38,59  (*)</td>
-								<td class="listaIsp5" align="left">Euro: 39,80  </td>
-								<td>0002121</td>
-								<td><a href="/Visure/ImmobiliPorz.do?idUiu=388326&catasto=T&fogliotipo=9&partnum=5731&codCom=C894&decodComune=COLOGNO AL SERIO&subanno=" title="fare click per visualizzare le porzioni"></a>
-
-								</td>
-							</tr>
+									<table>
+										<tr> 
+											<td><label for="listacom">Ufficio provinciale di: </label></td>
+											<td><select name="listacom"><option value=" "> </option>
+													
+														<option value=" NAZIONALE-IT">NAZIONALE</option>
+													
+														<option value="AGRIGENTO Territorio-AG">AGRIGENTO Territorio</option>
+													
+														<option value="ALESSANDRIA Territorio-AL">ALESSANDRIA Territorio</option>
+													
+														<option value="ANCONA Territorio-AN">ANCONA Territorio</option>
+													
+														<option value="AOSTA Territorio-AO">AOSTA Territorio</option>
+													
+														<option value="AREZZO Territorio-AR">AREZZO Territorio</option>
+													
+														<option value="ASCOLI PICENO Territorio-AP">ASCOLI PICENO Territorio</option>
+													
+														<option value="ASTI Territorio-AT">ASTI Territorio</option>
+													
+														<option value="AVELLINO Territorio-AV">AVELLINO Territorio</option>
+													
+														<option value="BARI Territorio-BA">BARI Territorio</option>
+													
+														<option value="BELLUNO Territorio-BL">BELLUNO Territorio</option>
+													
+														<option value="BENEVENTO Territorio-BN">BENEVENTO Territorio</option>
+													
+														<option value="BERGAMO Territorio-BG">BERGAMO Territorio</option>
+													
+														<option value="BIELLA Territorio-BI">BIELLA Territorio</option>
+													
+														<option value="BOLOGNA Territorio-BO">BOLOGNA Territorio</option>
+													
+														<option value="BRESCIA Territorio-BS">BRESCIA Territorio</option>
+													
+														<option value="BRINDISI Territorio-BR">BRINDISI Territorio</option>
+													
+														<option value="CAGLIARI Territorio-CA">CAGLIARI Territorio</option>
+													
+														<option value="CALTANISSETTA Territorio-CL">CALTANISSETTA Territorio</option>
+													
+														<option value="CAMPOBASSO Territorio-CB">CAMPOBASSO Territorio</option>
+													
+														<option value="CASERTA Territorio-CE">CASERTA Territorio</option>
+													
+														<option value="CATANIA Territorio-CT">CATANIA Territorio</option>
+													
+														<option value="CATANZARO Territorio-CZ">CATANZARO Territorio</option>
+													
+														<option value="CHIETI Territorio-CH">CHIETI Territorio</option>
+													
+														<option value="COMO Territorio-CO">COMO Territorio</option>
+													
+														<option value="COSENZA Territorio-CS">COSENZA Territorio</option>
+													
+														<option value="CREMONA Territorio-CR">CREMONA Territorio</option>
+													
+														<option value="CROTONE Territorio-KR">CROTONE Territorio</option>
+													
+														<option value="CUNEO Territorio-CN">CUNEO Territorio</option>
+													
+														<option value="ENNA Territorio-EN">ENNA Territorio</option>
+													
+														<option value="FERRARA Territorio-FE">FERRARA Territorio</option>
+													
+														<option value="FIRENZE Territorio-FI">FIRENZE Territorio</option>
+													
+														<option value="FOGGIA Territorio-FG">FOGGIA Territorio</option>
+													
+														<option value="FORLI Territorio-FO">FORLI Territorio</option>
+													
+														<option value="FROSINONE Territorio-FR">FROSINONE Territorio</option>
+													
+														<option value="GENOVA Territorio-GE">GENOVA Territorio</option>
+													
+														<option value="GORIZIA Territorio-GO">GORIZIA Territorio</option>
+													
+														<option value="GROSSETO Territorio-GR">GROSSETO Territorio</option>
+													
+														<option value="IMPERIA Territorio-IM">IMPERIA Territorio</option>
+													
+														<option value="ISERNIA Territorio-IS">ISERNIA Territorio</option>
+													
+														<option value="LA SPEZIA Territorio-SP">LA SPEZIA Territorio</option>
+													
+														<option value="LATINA Territorio-LT">LATINA Territorio</option>
+													
+														<option value="LECCE Territorio-LE">LECCE Territorio</option>
+													
+														<option value="LECCO Territorio-LC">LECCO Territorio</option>
+													
+														<option value="LIVORNO Territorio-LI">LIVORNO Territorio</option>
+													
+														<option value="LODI Territorio-LO">LODI Territorio</option>
+													
+														<option value="LUCCA Territorio-LU">LUCCA Territorio</option>
+													
+														<option value="L`AQUILA Territorio-AQ">L`AQUILA Territorio</option>
+													
+														<option value="MACERATA Territorio-MC">MACERATA Territorio</option>
+													
+														<option value="MANTOVA Territorio-MN">MANTOVA Territorio</option>
+													
+														<option value="MASSA Territorio-MS">MASSA Territorio</option>
+													
+														<option value="MATERA Territorio-MT">MATERA Territorio</option>
+													
+														<option value="MESSINA Territorio-ME">MESSINA Territorio</option>
+													
+														<option value="MILANO Territorio-MI">MILANO Territorio</option>
+													
+														<option value="MODENA Territorio-MO">MODENA Territorio</option>
+													
+														<option value="NAPOLI Territorio-NA">NAPOLI Territorio</option>
+													
+														<option value="NOVARA Territorio-NO">NOVARA Territorio</option>
+													
+														<option value="NUORO Territorio-NU">NUORO Territorio</option>
+													
+														<option value="ORISTANO Territorio-OR">ORISTANO Territorio</option>
+													
+														<option value="PADOVA Territorio-PD">PADOVA Territorio</option>
+													
+														<option value="PALERMO Territorio-PA">PALERMO Territorio</option>
+													
+														<option value="PARMA Territorio-PR">PARMA Territorio</option>
+													
+														<option value="PAVIA Territorio-PV">PAVIA Territorio</option>
+													
+														<option value="PERUGIA Territorio-PG">PERUGIA Territorio</option>
+													
+														<option value="PESARO Territorio-PS">PESARO Territorio</option>
+													
+														<option value="PESCARA Territorio-PE">PESCARA Territorio</option>
+													
+														<option value="PIACENZA Territorio-PC">PIACENZA Territorio</option>
+													
+														<option value="PISA Territorio-PI">PISA Territorio</option>
+													
+														<option value="PISTOIA Territorio-PT">PISTOIA Territorio</option>
+													
+														<option value="PORDENONE Territorio-PN">PORDENONE Territorio</option>
+													
+														<option value="POTENZA Territorio-PZ">POTENZA Territorio</option>
+													
+														<option value="PRATO Territorio-PO">PRATO Territorio</option>
+													
+														<option value="RAGUSA Territorio-RG">RAGUSA Territorio</option>
+													
+														<option value="RAVENNA Territorio-RA">RAVENNA Territorio</option>
+													
+														<option value="REGGIO CALABRIA Territorio-RC">REGGIO CALABRIA Territorio</option>
+													
+														<option value="REGGIO EMILIA Territorio-RE">REGGIO EMILIA Territorio</option>
+													
+														<option value="RIETI Territorio-RI">RIETI Territorio</option>
+													
+														<option value="RIMINI Territorio-RN">RIMINI Territorio</option>
+													
+														<option value="ROMA Territorio-RM">ROMA Territorio</option>
+													
+														<option value="ROVIGO Territorio-RO">ROVIGO Territorio</option>
+													
+														<option value="SALERNO Territorio-SA">SALERNO Territorio</option>
+													
+														<option value="SASSARI Territorio-SS">SASSARI Territorio</option>
+													
+														<option value="SAVONA Territorio-SV">SAVONA Territorio</option>
+													
+														<option value="SIENA Territorio-SI">SIENA Territorio</option>
+													
+														<option value="SIRACUSA Territorio-SR">SIRACUSA Territorio</option>
+													
+														<option value="SONDRIO Territorio-SO">SONDRIO Territorio</option>
+													
+														<option value="TARANTO Territorio-TA">TARANTO Territorio</option>
+													
+														<option value="TERAMO Territorio-TE">TERAMO Territorio</option>
+													
+														<option value="TERNI Territorio-TR">TERNI Territorio</option>
+													
+														<option value="TORINO Territorio-TO">TORINO Territorio</option>
+													
+														<option value="TRAPANI Territorio-TP">TRAPANI Territorio</option>
+													
+														<option value="TREVISO Territorio-TV">TREVISO Territorio</option>
+													
+														<option value="TRIESTE Territorio-TS">TRIESTE Territorio</option>
+													
+														<option value="UDINE Territorio-UD">UDINE Territorio</option>
+													
+														<option value="VARESE Territorio-VA">VARESE Territorio</option>
+													
+														<option value="VENEZIA Territorio-VE">VENEZIA Territorio</option>
+													
+														<option value="VERBANIA Territorio-VB">VERBANIA Territorio</option>
+													
+														<option value="VERCELLI Territorio-VC">VERCELLI Territorio</option>
+													
+														<option value="VERONA Territorio-VR">VERONA Territorio</option>
+													
+														<option value="VIBO VALENTIA Territorio-VV">VIBO VALENTIA Territorio</option>
+													
+														<option value="VICENZA Territorio-VI">VICENZA Territorio</option>
+													
+														<option value="VITERBO Territorio-VT">VITERBO Territorio</option></select>
+											</td>
+											<td width="300" align="right">
+												<a href="/Visure/vpf/ElencoUffici.do" target="_blank">Consulta elenco degli uffici</a>
+											</td>
+										</tr> 
+									</table>
+								</fieldset>
+								<input type="submit" value="Applica">
+							</form>
 						
-					</tbody>
-				</table>
-			 </fieldset>
-			
-			
-				<p>&nbsp;&nbsp;&nbsp;I redditi contraddistinti da (*) indicano
-				che il reddito dominicale &egrave; stato calcolato tenendo conto delle
-				deduzioni.</p>
-			
-			<table>
-				<tr>
-					<td>
-						<input type="submit" name="intestati" value="Intestati">
-						<input type="submit" name="visuraImm" value="Visura Per Immobile">
-						<input type="submit" name="partita" value="Ricerca per Partita">
-						 
-											
-						
-					
-					 
-					</form></td>
-					<td><form name="RicercaIMMForm" method="post" action="/Visure/vimm/IndietroDatiImm.do" onsubmit="this.indietro.disabled=true;">
-						<input type="submit" name="indietro" value="Indietro">
-					</form></td>
-				</tr>
-			</table>
-			<br>
-	
 									</div>
 								</div> <!-- Fine colonna 1 -->
 							</div>
