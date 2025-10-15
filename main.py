@@ -136,7 +136,6 @@ with open("step8_close.html", "w", encoding="utf-8") as f:
 session.close()# Cerrar la sesión de requests
 
 """
-"https://portaleingmonza.visura.it/homepageAreeTematicheAction.do"
     resp_next = session.post(next_url, data=form_data)
     print("➡️ Step 5 SceltaLink.do status:", resp_next.status_code)
 
