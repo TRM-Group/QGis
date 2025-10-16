@@ -1,0 +1,513 @@
+/* Canali Agenzia Cosa devi fare, Cosa ti serve, Documentazione, Contatti, Scheda adempimento */
+
+/* Colonna contenuti */ 
+#colonna1 h1, #contenuti_una_colonna h1 {
+	background-color: #FFF;
+	font-size: 150%;
+	margin: 19px 0 0 0;
+	padding: 0 0 0 10px;
+	border-bottom: 7px solid #eee;
+	color: #C00000;
+	width: 97%;
+	font-weight: bold;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+#colonna1 h1 span, #contenuti_una_colonna h1 span {
+	position: relative;
+	left: 0;
+/*	top: 0px;
+*/}
+#colonna1 h2, #contenuti_una_colonna h2 {
+	background-color: #FFF;
+	margin: 0 10px 0 0;
+	padding: 30px 0 0 10px;
+	color: #333;
+	font-size: 140%;
+}
+#colonna1 h3, #contenuti_una_colonna h3 {
+	/*background-color: #FFF;*/
+	font-size: 120%;
+	margin: 15px 10px 0 0;
+	padding: 0 0 0 10px;
+	color: #333;
+}
+#colonna1 p, #contenuti_una_colonna p {
+	margin: 10px 10px 20px 0;
+	padding: 0 0 0 10px;
+	line-height: 1.4em;
+}
+#colonna1 ul, #contenuti_una_colonna ul {
+	margin: 5px 10px 0 20px;
+	padding: 0;
+	list-style-type: none;
+}
+#colonna1 ul li, #contenuti_una_colonna ul li {
+	line-height: 1.4em;
+	margin-bottom: 5px;
+	margin: 10px 0;
+	padding: 0 0 0 15px; 
+	display: block;
+	color: #000;
+	background-image:url(/img_sister/bullet_blu.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+}
+#colonna1 h2 a, #colonna1 h2 a:visited {
+	background-image:url(/img/bullet_menu_scheda_adempimento.gif);
+	background-position:0 5px;
+	background-repeat:no-repeat;
+	border-bottom:2px solid #E4E4E4;
+	color:#00467F;
+	display:block;
+	font-weight:normal;
+	padding-left:20px;
+	text-decoration:none;
+}
+
+
+#smsmail h2 a , #smsmail h2  a  {
+	font-size: 70%;
+ 	text-decoration: none;
+	color:#00467F;
+	background-image:url(/img/bullet.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+	min-height: 25px; 
+	height: auto !important; 
+	height: 25px;
+	padding-left: 30px;
+	border: 0 none;
+
+}
+/* Fine Colonna contenuti */ 
+
+
+/* Canale Servizi */
+#contenuti_due_colonne_servizi #colonna1 h1/*, #contenuti_due_colonne_servizi #colonna2 h1 */{
+	color: #212121;
+	color: #555;
+	color: #C00000;
+/*	padding-top: 4px;
+*/}
+#contenuti_due_colonne_servizi #colonna1 h1.lucchetto, #contenuti_due_colonne #colonna1 h1.lucchetto {
+	background-image:url(/img/lucchetto_menu.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-left: 30px;
+	width: 95%;
+}
+#colonna2 ul li a.lucchetto, #colonna2 ul li a.lucchetto:visited {
+	background-image:url(/img/lucchetto_menu.gif);
+	background-position: 3px center;
+}
+
+/*#contenuti_due_colonne_servizi #colonna1 h2 {
+	color: #024802;
+	font-weight: normal;
+}
+*/
+#contenuti_due_colonne_servizi #colonna1 h2 a, #contenuti_due_colonne_servizi #colonna1 h2 a:visited  {
+/*	color: #555;
+*/	text-decoration: none; 
+}
+#contenuti_due_colonne_servizi #colonna1 h2 a.lucchetto, #contenuti_due_colonne_servizi #colonna1 h2 a.lucchetto:visited, #contenuti_due_colonne #colonna1 h2 a.lucchetto, #contenuti_due_colonne #colonna1 h2 a.lucchetto:visited  {
+	background-image:url(/img/lucchetto_menu.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	min-height: 25px; 
+	height: auto !important; 
+	height: 25px;
+	padding-left: 25px;
+}
+#contenuti_due_colonne_servizi #colonna1 h2 a:hover {
+	text-decoration: underline; 
+}
+.cont_sinottico {
+	float: left;
+	width: 99%;
+	margin: 0;
+	padding: 0;
+}
+.sinottico {
+	float: left;
+	width: 45%;
+	margin: 0 1% 0 0;
+	padding: 0;
+}
+
+.bordo_destro {
+	border-right: 2px solid #eee;
+}
+#colonna1 .cosa_devi_fare_button  {
+	margin: 10px 0 0 0;
+	padding: 0; 
+}
+#cont_sinottico {
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+#colonna1 #cont_sinottico .sinottico .cosa_devi_fare_button h2, #colonna1 .cosa_devi_fare_button h2 {
+	font-weight: normal;
+/*	border-bottom: 1px solid #eee;
+*/	border-bottom: 2px solid #E4E4E4;
+	padding: 0 0 0 20px;
+	margin: 20px 10px 0 0; 
+	background-image:url(/img/bullet_titolo_sinottico.gif);
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	font-weight: normal;
+	color: #333; 	
+}
+#colonna1 #cont_sinottico .sinottico p {
+	margin-bottom: 20px;
+}
+#colonna1 #cont_sinottico .sinottico ul {
+	margin-bottom: 30px;
+}
+#contenuti_due_colonne_servizi #colonna1 h2 {
+	background: none;
+}
+
+/* Fine Canale Servizi */
+
+/* Apertura / chiusura titoli Home canali Cosa ti serve - Cosa devi fare */
+#colonna1 .open_box p {
+/*	margin: 10px 0 0 15px;
+	padding: 0 0 10px 20px;
+*/}
+#colonna1 .open_box h2.open_box_title  {
+	margin: 10px 0;
+}
+
+#colonna1 .open_box h2.open_box_title  a {
+	background-image:url(/img/ico_piu.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+	display: block;
+	margin: 20px 0 0 0;
+	padding: 0 0 0 20px;
+
+}
+
+
+#colonna1 ul.open_box_content {
+	list-style-type: none;
+/*	margin: 10px 0 0 15px;
+	padding: 0 0 10px 20px;
+*/	background-color: #FFF;
+	margin-left:15px;
+	padding-bottom:10px;
+}
+#colonna1 ul.open_box_content  li {
+	background-image: url(/img_sister/bullet_blu.gif);
+	background-position: 0 5px;
+	background-repeat: no-repeat;
+	margin: 10px 0;
+}
+#colonna1 .open_box_content a {
+/*	padding: 0 0 15px 15px;
+	margin: 0;
+*/	text-decoration: underline; 
+}
+#colonna1 .open_box_content a:hover {
+	text-decoration: none; 
+	text-decoration: underline; 
+}
+
+#colonna1 .open_box h3 {
+	color:#000;
+	font-size:90%;
+	margin: 0 15px 0 0;
+	padding:0 0 0 10px;
+}
+
+/* Fine Apertura / chiusura titoli Home canali Cosa ti serve - Cosa devi fare */
+
+p.guida a {
+	padding: 10px;
+	margin: 0;
+	display: block;
+	text-decoration: underline;
+	border: 1px solid  #00467F;
+	width: 80%;
+}
+#colonna1 ul.pdf li  {
+	background: none;
+
+}
+#colonna1 ul.pdf li a  {
+	background-image:url(/img/pdf.gif);
+	background-position:0 7px;
+	background-repeat:no-repeat;
+	padding: 10px 0 10px 30px;
+}
+
+/* Bottone Per saperne di piu */
+
+.per_saperne_di_piu, .per_saperne_di_piu2 {
+	position: relative;
+	float: left;
+	width: 98%;
+	border-bottom: 2px solid #E4E4E4;
+}
+#colonna1 .cosa_devi_fare_button .per_saperne_di_piu h2 {
+	float: left;
+	border: 0 none;
+}
+#colonna1 #cont_sinottico .sinottico .per_saperne_di_piu p, #colonna1 #cont_sinottico .sinottico .per_saperne_di_piu2 p {
+/*	clear: both;
+	position: absolute;
+	right: -70px;
+	top: -20px;
+	width: 191px; 
+	border: 0px solid red; 
+	margin: 0;
+	padding: 0; 
+	text-align: left;
+	z-index: 1;
+*/
+	float: left;
+	margin: 20px 0 0 0;
+	padding: 0;
+	position: relative;
+}
+.per_saperne_di_piu p a, .per_saperne_di_piu2 p a  {
+	display: block;
+	color: #00467F;
+	text-decoration: none; 
+}
+.per_saperne_di_piu p a span, .per_saperne_di_piu2 p a span { 
+/*	position: absolute;
+	top: -10000px; */
+	display: none;
+}
+.per_saperne_di_piu  a:hover, .per_saperne_di_piu2  a:hover { position: relative; }
+.per_saperne_di_piu p a:hover span, .per_saperne_di_piu2 p a:hover span { display:block; }
+
+.per_saperne_di_piu p a:hover span, .per_saperne_di_piu p a:focus span, .per_saperne_di_piu p a:active span {
+    border: 0px solid #000;
+    display:block;
+    position: absolute;
+	left: 25px;
+    top: -10px;
+	width: 183px;
+	height: 45px;
+	width: 159px;
+	height: 43px;
+    z-index: 1;
+	font-size: 80%;
+	background-image:url(/img/tooltip/tooltip_04.jpg);
+	background-position: left top;
+	background-repeat:no-repeat;
+	margin: 0;
+	padding: 5px 0;
+	font-weight: bold;
+	cursor: pointer;
+	color: #FFF;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+
+.per_saperne_di_piu2 p a:hover span, .per_saperne_di_piu2 p a:focus span, .per_saperne_di_piu2 p a:active span {
+/*    border: 0px solid #fff;
+    display:block;
+    position: absolute;
+	left: 30px;
+    top: -10px;
+	width: 161px;
+	height: 40px;
+    z-index: 1;
+	font-size: 80%;
+	background-image:url(/img/tooltip.jpg);
+	background-position: left top;
+	background-repeat:no-repeat;
+	margin: 0;
+	padding: 5px 0;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	line-height: 1.5em;
+*/}
+#colonna1 div.sinottico ul li.lente, #colonna1 ul li.lente {
+	background-position: 0 13px;
+	line-height:24px;	
+/*	background-image:url(/img/lente_ricerca.gif);
+	background-position: right top;
+	background-repeat:no-repeat;
+	padding: 0 25px 0px 0;	
+	line-height: 24px;
+/*	display: inline-block; *//*per baco di IE */
+}
+#colonna1 div.sinottico ul li.lente img {
+/*	vertical-align: top;
+*/}
+
+
+/* News vicino al titolo nel canale "Il tuo profilo fiscale" */
+#news_titolo {
+	float: left;
+	width: 98%;
+	border-bottom: 7px solid #EEE;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+#news_titolo h1 {
+	position: relative;
+	float: left;
+	width: 47%;
+	padding: 0;
+	margin: 0;
+	border-bottom: 0 none;
+	min-height: 100px;
+	height: auto !important; 
+	height: 100px;
+}
+#news_titolo h1 span {
+	position: absolute;
+	bottom: 0;
+/*	top: auto;
+*/}
+/*#news_titolo p {
+	text-align: left !important;
+	float: right;
+	width: 49%;
+	margin: 0;
+	padding: 15px 0 20px 20px;
+	background-image:url(/img/box_news.jpg);
+	background-position: right top;
+	background-repeat:no-repeat;
+}
+#news_titolo p a, #news_titolo p a:visited {
+	color:#00467F;
+	width: 330px;
+	border: 0px solid red;
+	text-align: left;
+	float: right;
+	padding: 0 30px0 10px;
+	font-weight: bold;
+	text-decoration:none;
+	line-height: 1.2em;
+}
+#news_titolo p a:hover {
+	text-decoration: underline;
+}
+*/
+
+
+.cont_box_news {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.box_news {
+	width: 49%;
+	width: 400px;
+	float: right;
+	margin: 0 0 5px 0;
+	padding: 0;
+	background: transparent url(/img/news_dwn_sx.jpg) no-repeat left bottom;
+}
+.box_news_lunga {
+	width: 99%;
+	margin: 0 0 15px 0;
+	padding: 0;
+	background: transparent url(/img/news_dwn_sx.jpg) no-repeat left bottom;
+}
+
+.box_news_titolo {
+	margin:0;
+	padding:0;
+	background: transparent url(/img/news_up_sx.jpg) no-repeat top left;
+}
+
+ 
+#colonna1 .box_news_titolo h2 {
+	margin: 0;
+	padding: 0;
+	min-height: 40px;
+	height: auto !important; 
+	height: 40px;
+	border: none;
+	background:transparent url(/img/news_up_dx.jpg) no-repeat top right;
+}
+
+#colonna1 .box_news_titolo h2 span {
+	display: block;
+	padding: 15px 0 0 20px;
+	font-size: 80%;
+	color: #00467F;
+	font-weight: bold;
+}
+
+
+#colonna1 .body_box_news_titolo {
+	margin:0;
+	padding: 0 0px 0 20px;
+	background: transparent url(/img/news_dwn_dx.jpg) no-repeat bottom right;
+}
+#colonna1 div.body_box_news_titolo p{
+	margin: 0 30px 0 0;
+	padding: 0 0 10px 0;
+	min-height: 20px;
+	height: auto !important; 
+	height: 20px;
+}
+
+#colonna1 div.body_box_news_titolo p a, #colonna1 div.body_box_news_titolo p a:visited {
+	margin:0;
+	padding: 0;
+	display: block;
+/*	font-size: 120%;
+*/}
+
+#colonna1 div.body_box_news_titolo ul  {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	list-style-type: none;
+	min-height: 116px;
+	height: auto !important; 
+	height:116px;
+ 
+}
+#colonna1 div.body_box_news_titolo ul li {
+	margin: 0 0 10px 0;
+	padding: 0 0 0 15px; 
+}
+
+#colonna1 .nascondi {
+                position: absolute; 
+                left : -10000px; 
+}
+#colonna1 .mostra {
+                position: static; 
+                border: 1px solid #ccc; 
+                /*width: 95%;*/ 
+                background-color: #ededed;
+}
+#colonna1 #testo_nascosto {
+                margin: 10px 0;
+                padding: 0 0 10px 0;
+}
+
+#contenuti_due_colonne #colonna1 .mostra {
+margin-top:4px;
+margin-left:10px;
+background-color:#f5f5f5;
+padding-bottom: 6px;
+}
+
+#colonna1 p.open_box_title a {
+	background: url(/img/ico_piu.png) no-repeat left 3px; 
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: block;	
+}
+
+#colonna1 p.open_box_title a.ico_meno {
+	background: url(/img/ico_meno.png) no-repeat left 3px; 
+	padding-left: 20px;	
+}

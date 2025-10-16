@@ -1,0 +1,48 @@
+@import url("canali_new.css"); 
+/*@import url("contenuti_home_new.css");*/
+/*@import url("footer_new.css"); */
+/*@import url("menu_canali_new.css"); */
+/* @import url("menu_principale_new.css"); */
+/*@import url("menu_tab_new.css");*/
+@import url("servizi_telematici_new.css"); 
+@import url("servizi_telematici_EF_new.css");
+/*@import url("struttura_sito_new.css");*/
+/* @import url("testata_new.css"); */
+@import url("gestinc_new.css");
+
+
+.clearer {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* revisione grafica telematico */
+
+/* sovrascrive quello in Sister.css e servizi_telematici_EF.css*/
+.centrale_primo_piano1 {
+  border: 2px;
+  border-color: #738FAB;
+  border-style: solid;
+  padding: 0px 0px 0px 5px;
+  width: 90%;
+  float: none;
+  overflow: auto;
+  height: 245px;
+}
+
+/* sovrascrive quello in servizi_telematici_EF_new.css*/
+.form_cornice {
+	margin: 0px auto;
+	float: none;
+	padding: 0px;
+	text-align: center;
+	padding: 15px 10px 0px 15px;
+	width: 300px;
+	min-height : 40%;
+	height : 40%;
+	height : auto !important;
+}

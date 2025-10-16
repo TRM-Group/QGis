@@ -1,0 +1,457 @@
+/* Servizi telematici */
+#menu_servizi_telem_orizz {
+/*	width: 97%;
+	margin: 0 1%; 
+	padding: 0;
+*/
+}   
+#menu_servizi_telem_orizz h1 {
+/*	background-color: #FFF;
+	font-size: 130%;
+	margin: 15px 0 0 1%;
+	padding: 0;
+	border-bottom: 7px solid #eee;
+	color: #C00000;
+	width: 270px;
+	font-weight: 200;
+	float: left;
+*/
+}
+#menu_servizi_telem_orizz h1 span.skiptesto {
+/*	position : absolute; 
+	left : -10000px; 
+	width : 0px;
+	height: 0;
+*/}
+#menu_servizi_telem_orizz h1 span.testo_visibile {
+/*	position: relative;
+	left: 0;
+	top: 7px;
+*/}
+
+/*MODIFICA MONICA */
+#menu_servizi_telem_orizz span.err {
+	text-align: right;
+	margin: 9px 0 0 0;
+	font-size: 80%;
+	float: left;
+	list-style-type: none;
+	border-bottom: 7px solid #eee;
+	color: #00467F;
+/*	width: 71%;
+*/} 
+
+#menu_servizi_telem_orizz span.err a {
+	display: inline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+} 
+/*FINE MODIFICA MONICA */
+
+#menu_servizi_telem_orizz ul {
+	text-align: left;
+	margin: 24px 0 0 0;
+	padding: 10px 0 0 5px;
+/*	float: left;
+*/	list-style-type: none;
+	border-bottom: 7px solid #eee;
+	color: #00467F;
+/*	width: 71%;
+*/}   
+#menu_servizi_telem_orizz ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}   
+#menu_servizi_telem_orizz ul li a, #menu_servizi_telem_orizz ul li a:visited  {
+	text-decoration: none;
+/*	color: #00467F;
+	border-right: 1px solid #00467F;
+	padding: 0 10px;*/
+}   
+#menu_servizi_telem_orizz ul li a:hover {
+	text-decoration: underline;
+}   
+#menu_servizi_telem_orizz ul li a.nobordo {
+	border-right: none;
+}   
+
+#utenza_lavoro {
+	width: 97%;
+	text-align: left;
+	margin: 10px 0 0 1%;
+	padding: 0 0 5px 0;
+	float: left;
+	border-bottom: 3px solid #EEEEEE;	
+}   
+#scelta_utenza {
+	margin: 0px 0 0 1%;
+	padding: 5px 0 0 0;
+	width: 270px;
+	float: left;
+}
+#scelta_utenza a {
+	display: block;
+	width: 200px;
+	background-image: url(/img/utenza.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #00467F;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px 0 0 0;
+	color: #FFF;
+	min-height: 30px; 
+	height: auto !important; 
+	height: 30px;
+	font-size: 80%;
+	font-weight: bold;
+	text-decoration: none;
+}
+#scelta_utenza a:hover {
+	background-image: url(/img/utenza_hover.gif);
+}
+#utente {
+	text-align: left;
+	text-valign: center;
+	padding: 0 10px 5px 10px;
+	float: left;
+	color: #000;
+	background-color: #EEEEEE;
+    border: 1px solid #000;
+}   
+#utente p {
+	text-align: left;
+	margin: 10px 0;
+	padding: 5px 10px 0 10px;
+	font-size: 70%;
+}  
+#utente p strong {
+	font-size: 110%;
+} 
+ 
+hr {
+/*	clear: left;
+	border: 2px solid #eee;
+	width: 97%;
+	margin: 0 0 0 0;
+	padding: 0;*/
+}
+
+#titrovi  {
+	clear:both;
+	color:#000000;
+	font-size:80%;
+/*	margin:15px 0 0 29%;*/
+	margin: 10px 0 0 290px;
+	padding:0;
+	text-align:left;
+}
+
+/* IN PRIMO PIANO e MESSAGGI PERSONALIZZATI */
+#colonna1 div.boxst{
+	width: 42%;
+	float:left;
+	margin: 10px 0 20px 0;
+	background: transparent url(/img/bordo_inf_des.jpg) no-repeat bottom right;
+}
+#colonna1 div.boxst_margin {
+	margin-right: 5%;
+}
+
+
+#colonna1 div.in_primo_piano_st, #colonna1 div.messaggi_personalizzati  {
+	margin:0;
+	padding:0;
+	background: transparent url(/img/bordo_sup_des.jpg) no-repeat top right;
+}
+ 
+#colonna1 div.in_primo_piano_st h1 {
+	margin: 0;
+	padding: 0;
+	min-height: 60px;
+	height: auto !important; 
+	height: 60px;
+	border: none;
+	background:transparent url(/img_ST/ico_primopiano.jpg) no-repeat top left;
+}
+#colonna1 div.messaggi_personalizzati h1 {
+	margin: 0;
+	padding: 0;
+	min-height: 60px;
+	height: auto !important; 
+	height: 60px;
+	border: none;
+	background:transparent url(/img/ico_msgpersonal.jpg) no-repeat top left;
+}
+#colonna1 div.messaggi_personalizzati h1 span, #colonna1 div.in_primo_piano_st h1 span {
+	display: block;
+	padding: 15px 0 0 70px;
+	font-size: 80%;
+	color: #00467F;
+	font-weight: bold;
+}
+
+
+#colonna1 div.bodyst {
+	margin:0;
+/*	padding: 0 10px 10px 80px;*/	
+	padding: 0 10px 10px 40px;
+	background: transparent url(/img/bordo_inf_sin.jpg) no-repeat bottom left;
+}
+
+#colonna1 div.body_box_news_titolo p {
+    padding-bottom: 30px;
+}
+.box_news {
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+#colonna1 div.boxst p {
+	margin: 0 10px 1em 0;
+	padding: 0;
+}
+
+#colonna1 div.boxst p a {
+	margin:0;
+	padding: 0;
+	display: block;
+	font-size: 120%;
+}
+
+
+#colonna1 div.boxst ul  {
+	position: relative;
+	margin: 0 0 0 -18px;
+	padding: 0;
+	list-style-type: none;
+	height:240px;
+	overflow: auto;
+ 
+}
+#colonna1 div.boxst ul li {
+	margin: 0 0 10px 0;
+	padding: 0 0 0 15px; 
+}
+/*AGGIUNTO 14 LUGLIO - Monica */
+#colonna1 div.boxsth {
+	width: 70%;
+	margin: 10px auto 20px auto;
+	background: transparent url(/img/bordo_inf_des.jpg) no-repeat bottom right;
+}
+#colonna1 div.boxsth p {
+	margin: 0 10px 1em 0;
+	padding: 0;
+}
+#colonna1 div.boxsth p a {
+	margin:0;
+	padding: 0;
+	display: block;
+	font-size: 120%;
+}
+#colonna1 div.boxsth ul {
+	margin: 0px 0 20px 0;
+	padding: 0;
+	list-style-type: none;
+	height:240px;
+	overflow: auto;
+}
+#colonna1 div.boxsth ul li {
+	margin: 0 0 10px 0;
+	padding: 0 0 0 15px; 
+}
+
+
+/* 4.4.2011 codice per la customer satisaction e faccine in due colonne */
+#indagini_sinistra {
+width: 50%;
+height: 150px;
+float: left;
+background-color: #FEEDD3;
+}
+
+#indagini_destra {
+width: 50%;
+height: 150px;
+float: right;
+background-color: ##FFFFFF;
+}
+
+/* 22.3.2012 codice per le faccine in colonna centrato */
+#contenuti_due_colonne #indagini_centro {
+width: 50%;
+height: 150px;
+margin: 10px 0 10px 24%;
+background-color: #FEEDD3;
+}
+
+/* box celeste 17.5.2012 */
+p.attenzione_celeste, div.attenzione_celeste {
+    background-color: #E6F7FF;
+    border: 1px solid #CCCCCC;
+    margin: 25px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/* testo h1 dinamico in sabilitazione 22.5.2012 */
+#colonna1 h1#sabil span {
+    margin-right: 410px;
+    display: block;
+}
+
+#testo_con_strillo {
+	margin-right: 450px;
+	height: 100px;
+	height: auto !important;
+	min-height: 100px;
+}
+
+#contenuti_due_colonne #colonna1 #box_sms {
+    width: 430px;
+}
+
+/*MODIFICA Menu Orizzontale */
+
+.menup {
+	margin-bottom: 0;
+}
+
+
+#menu_servizi_telem_orizz {
+    background-color: #f0f0f0;
+    border: 1px solid #004080;
+    /*float: left;
+    height: auto !important;
+    margin: 0 1% 0 2%;*/
+    margin-top: 20px;
+    min-height: 48px;
+    padding: 0;
+   /* width: 96%;*/
+}
+
+#menu_servizi_telem_orizz ul {
+    border: 0 none;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0 5px;
+    text-align: left;
+	float: left;
+	width: 100%;
+}
+
+
+#menu_servizi_telem_orizz ul li {
+	border-right: 1px solid #00467F;
+	padding: 0 5px; 
+	float: left;
+	display: block;
+}
+#menu_servizi_telem_orizz ul li.nobordo {
+	border: 0 none; 
+}
+#menu_servizi_telem_orizz ul li.assistenza {
+	border: 0 none;
+	margin-left: 10px;
+	background-color: #F7A86B; 
+	border: 1px solid #00467F;
+	border-radius: 4px;
+}
+
+#menu_servizi_telem_orizz ul li a {
+	border: 0 none; 
+	padding: 3px 5px;
+	float: left;
+	
+}
+#menu_servizi_telem_orizz ul li.assistenza a {
+	color: #000;
+}
+
+
+#menu_servizi_telem_orizz ul li a.current {
+	border: 1px solid #00467F; 
+	background-color: #FFF; 
+	color: #00467F;
+	border-radius: 4px;
+
+}
+
+.menup ul li a.servizionline_current_st, .menup ul li a:visited.servizionline_current_st {
+	color: #02335C;
+	background: #FFF url(/img/menu_in_serv_tel.jpg) center bottom no-repeat;
+	width:16%;
+}
+
+.img_dx {
+	margin: 50px 10px 0 15px;
+	float: right;
+    width: 212px;
+
+}
+
+
+/*FINE MODIFICA Menu Orizzontale */
+/*inizio style per il template del pin*/
+#contenitore-pin{
+    background: #eee;
+    background: rgba(0, 0, 0, 0) linear-gradient(#fff, #eee) repeat scroll 0 0;
+    border: 1px solid #488fc7;
+    border-radius: 4px;
+    box-shadow: 0 4px 3px -3px #666;
+/* da ripristina per link nonhaipin
+    min-height: 80px;
+*/
+    min-height: 60px;
+    margin: 0;
+    width: auto;
+    min-width: 480px;
+    padding: 1px 2px 5px 2px;
+}
+#contenitore-pin #box-1{
+    border-left: 20px solid #00477F;
+    border-bottom: 0 none;
+    border-right: 0 none;
+    border-top: 0 none;
+    color: #000;
+    float: left;
+    margin: 6px 2px 10px 2px;
+    /*
+	padding: 0.4em 0.4em 0.4em 0.7em;
+    */
+padding:0 0 0 10px;
+    width: 65%;
+    background-image: url("/img/lucchetto_menu2.fw.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 50px;
+    line-height: 50px;
+
+}
+#contenitore-pin #box-1 br{
+	display: block;
+	margin-top: 6px;	
+}
+#contenitore-pin #box-2{
+    border: 0px solid #900;
+    color: #000;
+    float: left;
+/* da ripristina per link nonhaipin
+    margin: 10px 0;
+*/
+	margin: 0px;
+    padding: 5px 0.4em 0.4em;
+    width: 20%;
+}
+    
+#contenitore-pin #box-2 label{
+    display:block;
+}    
+    
+.bottom-to-top { border-width: 3px; border-style: solid; -webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#00477F), to(rgba(0, 0, 0, 0))) 1 100%; -webkit-border-image: -webkit-linear-gradient(bottom, #00477F, rgba(0, 0, 0, 0)) 1 100%; -moz-border-image: -moz-linear-gradient(bottom, #00477F, rgba(0, 0, 0, 0)) 1 100%; -o-border-image: -o-linear-gradient(bottom, #00477F, rgba(0, 0, 0, 0)) 1 100%; border-image: linear-gradient(to top, #00477F, rgba(0, 0, 0, 0)) 1 100%; }    
+        
+/*fine stile template del pin*/

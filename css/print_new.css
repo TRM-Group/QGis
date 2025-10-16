@@ -1,0 +1,104 @@
+@media print {
+/* stili per la stampa */
+body {
+	color: black; 
+	background: white;
+	font-size: 70%; 
+	width: 95%;
+}
+.carousel-inner > .sr-only{position:relative;width:100%;height:auto;padding:0px;margin:0px;overflow:visible;clip:unset;border:0}
+.carousel-inner>.item{display: inline-block;}
+#main section {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+#main section.section-social .panel {
+    min-height: 20px !important;
+}
+#page-header .navbar-toggle {display: none;}
+a{colo:#000 !important;}
+a:link, a:visited {
+	background-color: #FFF; 
+	color: #000 !important; 
+	text-decoration: none;
+	font-weight: normal;
+}
+.box_text_putenti ul li a, .box_text_putenti ul li a:visited{color: #000 !important;}
+a:link:after, a:visited:after {
+content: " ";
+}
+h1, h2, h3, h4, h5, h6{
+	background-color: #FFF; 
+	color: #000; 
+	margin: 10px 10px 10px 0;
+	border: none;
+}
+h1.underline, h2.underline, h3.underline, h4.underline {
+	border-bottom: 0px solid #036;
+	padding-bottom: .3em;
+}
+img.logo { 
+	text-align: left;
+	display: block;
+	visibility: visible;
+	height: auto;
+	max-width: 105%;
+}
+img {border:0;}
+img.img-responsive{display: none;}
+img.single_at_img{display: none;}
+#menu-service{display: none;}
+.language{display: none;}
+.link-list > li > a::before {content: "-" !important; padding: 0px; margin:0px;}
+footer{display: none;}
+/* Stampa Home Page */
+.box_text_putenti {
+height: 100px;
+width: 20%;
+display: inline;
+float: left;
+}
+.fa-3x{display: none;}
+.fa-pull-right{display: none;}
+.carousel-indicators{display: none;}
+.borderblu-box{ border-top: 0px; }
+.btn, .btn-info, .btn-entrypoint:not(:hover){
+	position: static;
+ 	display: block; 
+	width: 100%; 
+	padding: 0;
+	font-size: 12px;
+	margin: 0; 
+	border: 0px !important;
+	height: auto !important; 
+	background-color: transparent;
+	color: #000 !important; 
+	text-align: left;
+	float: left;	
+}
+
+.section-social{height: 40px !important;}
+.twitter-block{display: none;}
+.pg-tw, .pg-fb{display: none;}
+.fb-post{display: none;}
+.video-container{display: none;}
+.social-block {width: 33%; float: left; display: inline; margin-bottom: 0px !important;}
+.box_text_container {padding:0;margin-bottom: 0px;}
+.card{float: left; width: 33%; min-height: 180px; border:0px;}
+.stili-tematici-info {margin-top: 0px; width: 100%; display: inline-block;}
+.sito-tem, .sito-tem-a{display: none;}
+.stili-tematici-info p {border-top: 0px; display:inline; width: 100%;}
+.date_day a {font-weight: bold;}
+.day-calendar{width: 25% !important; float: left;}
+#CSbox ul {list-style-type: }
+/*pagine interne*/
+.link-correlati{border-top: 2px solid #000;}
+.cerca-servizio{display: none;}
+#filtri-servizi{display: none;}
+#main .panel-collapsible-servizi.panel-default-servizi > .panel-heading-servizi > a{color: #000 !important;}
+.panel-primary{border-color: #000;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {border-top-color: #000;}
+.card-contatti {min-height: 130px;}
+.section_calendar_simple_days {border-bottom: 0px solid transparent;}
+.collapse{display: block;}
+}

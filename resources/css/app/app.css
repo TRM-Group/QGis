@@ -1,0 +1,285 @@
+/* CSS specifico di ogni applicazione (l'unico da modificare) */
+
+.skiplink, .skipheader, .skiptesto, #box_tipo_contribuente h1.skipheader {
+	position:absolute;
+	left: -10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.invisibile {
+	display: none;
+}
+/*Inizio - le seguenti per evitare il responsive. da togliere in fase 2 */
+ body, .container-fluid{
+	min-width: 992px;
+}
+
+/* Per bloccare il menu*/
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+.navbar-nav {
+	margin: 0;
+}	
+
+.navbar-collapse {
+    border-top: 0;
+}
+
+/*Fine - per bloccare il menu*/
+
+/* Se elimino voci menu di menu */
+.navbar{
+	min-height: 48px;
+}
+/* Fine - Se elimino voci menu di menu */
+
+/*Gestione stile titolo pagina */
+#colonna1 h1, #contenuti_una_colonna h1, h1, .h1
+.panel-title,
+.btn-entrypoint {
+	font-family: "Titillium Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	margin: 1em 0;
+}
+#colonna1 h1, #contenuti_una_colonna h1, h1, .h1 {
+	font-size: 2.1em;
+}
+h2, .h2 {
+	font-size: 1.8em;
+}
+h3, .h3 {
+	font-size: 1.6em;
+}
+#colonna1 h1, #contenuti_una_colonna h1{
+	border-bottom: 5px solid #004080;
+	color:#000;
+	width:100%;
+	padding: 0 0 0.3em;
+}
+/* FIne -Gestione stile titolo pagina */
+
+/* BREADCRUMB */
+
+#colonna1 ul.breadcrumb, #contenuti_una_colonna ul.breadcrumb {
+	padding: 26px 0 0 0;
+	list-style: none;
+	background-color: #ffffff;
+	margin: 0px;
+}
+#colonna1 ul.breadcrumb li, #contenuti_una_colonna ul.breadcrumb li {
+	display: inline;
+	padding: 0px;
+	background-image: none;
+}
+#colonna1 ul.breadcrumb li+li:before, #contenuti_una_colonna ul.breadcrumb li+li:before {
+	padding: 8px;
+	content: "/\00a0";
+	color: inherit;
+}
+#colonna1 ul.breadcrumb li a, #contenuti_una_colonna ul.breadcrumb li a {
+	color: #0275d8;
+	/*text-decoration: none;*/
+}
+#colonna1 ul.breadcrumb li a:hover, #contenuti_una_colonna ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+}
+
+/* Fine - BREADCRUMB */
+
+/*Link correlati*/
+
+#cont_due_blocchi.link_correlati #double_box{
+	margin: 0;
+	min-height: unset;
+}
+
+#cont_due_blocchi.link_correlati #box_right{
+	position: static;
+	width: 100%;
+	clear: both;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati{
+	background: none;
+	margin: 0;
+    text-align: unset;
+    width: 100%;
+    background-color: #ebf3fc;
+     padding-bottom: 10px;
+}
+
+#cont_due_blocchi.link_correlati #box_right #box_correlati #link_correlati{
+	background:none;
+
+	margin-top: 70px;
+	background-color: #ebf3fc;
+	border-top: 2px solid #003b71;
+	padding: 10px;
+
+}
+
+#cont_due_blocchi.link_correlati #box_right #box_correlati #link_correlati h2{
+	background:none;
+	min-height: 1px;
+	
+	color: #003b71;
+	font-size: 20px;
+	font-weight: 200;
+	color: #003b71;
+	margin-top:20px;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati #link_correlati h2 span{
+	color: inherit;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 200;
+    padding: 0px;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati #testo_correlati{
+	background:none;
+	padding: 0px;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati #testo_correlati ul{
+	list-style: none;
+	padding-left: 0px;
+	 position: static;
+	 margin: 10px 0;
+ }
+#cont_due_blocchi.link_correlati #box_right #box_correlati #testo_correlati ul li{
+	background:none;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati #testo_correlati ul li a{ 
+ text-decoration: underline;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati #testo_correlati ul li a:hover, #box_correlati #testo_correlati ul li a:visited {
+	color: #eb641f;
+}
+#cont_due_blocchi.link_correlati #box_right #box_correlati #testo_correlati ul li a, #box_correlati #testo_correlati ul li a:visited {
+	color: #06c;
+}
+
+/* Fine Link correlati*/
+
+/*Link header MEF*/
+#agenzia-header p a, #agenzia-header p a:hover, #agenzia-header p a:visited {
+    color: #fff;
+}
+/*Fine Link header MEF*/
+
+/* Lista avvisi Main */
+div#contenitore div#contenuti_due_colonne div#colonna1 div#cont_due_blocchi div#double_box ul li a{
+	display: inline;
+}
+/* Fine Lista avvisi Main */
+
+/* Userinfo testata*/
+#user-info p {
+    margin-bottom: 5px;
+    padding-left: 8px;
+    text-indent: -8px;
+} 
+/* Fine Userinfo testata*/
+
+/*per mettere caratteri non titilium su main*/
+
+main{
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*Fine per mettere caratteri non titilium su main*/
+/* indentazione secondo livello menu di sinistra*/
+[id^=submenu-] > li {
+    padding-left: 10px;
+}
+/*Fine indentazione secondo livello menu di sinistra*/
+/*Menu orizzontale*/
+/*
+.container-fluid #menu_servizi_telem_orizz ul {
+    padding: 10px 0 0 5px;
+}
+
+.container-fluid #menu_servizi_telem_orizz {
+    background-color: #f0f0f0;
+    border: 1px solid #004080;
+    float: none;
+    height: inherit;    
+    margin-top: 20px 0 0 0;
+    min-height: 48px;
+    padding: 0;
+    width: 100%;
+}
+*/
+/*Fine - Menu orizzontale*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
+
+/* Extra large devices (x-large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+	
+}
+
+
+
+
+/* margin e padding del vecchio fieldset */
+.fieldset-old {
+	border: 1px solid #00477F;
+	padding: 10px 0;
+    margin: 0 0 30px 0;
+}
+
+/* label non bold */
+.weight-normal {
+	font-weight: normal;
+}
+
+/* label black */
+.color-black {
+	color: black;
+}
+
+/* gestione form cambio password */
+.form-width {
+	width: 551px;
+}
+
+/* gestione lista richiesta PIN */
+.label-inline {
+	display: inline;
+}
+
+/* margin dichiarazione ristampa */
+.margin-dichiarazione {
+	margin-bottom: 0px;
+}
