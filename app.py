@@ -4,6 +4,9 @@ from bs4 import BeautifulSoup
 # importing Login data from config file for security and privacy
 from config import login_data
 
+FOGLIO = "09"
+PARTICELLA = "2333"
+
 # 🔧 Crear sesión persistente
 session = requests.Session()
 
@@ -145,8 +148,8 @@ data = {
     "sezione": "",
     "tipoIdentificativo": "d",
     "sezUrb": "",
-    "foglio": "09",
-    "particella1": "5731",
+    "foglio": FOGLIO,
+    "particella1": PARTICELLA,
     "particella2": "",
     "subalterno1" : "",
     "tipoDenuncia" : "",
@@ -177,8 +180,8 @@ data = {
     "sezione" : "",
     "tipoIdentificativo": "d",
     "sezUrb": "",
-    "foglio": "09",
-    "particella1": "5731",
+    "foglio": FOGLIO,
+    "particella1": PARTICELLA,
     "particella2": "",
     "subalterno1" : "",
     "subalterno2" : "",
