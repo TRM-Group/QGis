@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from config import login_data
 
 FOGLIO = "09"
-PARTICELLA = "5731"
+PARTICELLA = "10745"
 
 # Functions
 def writeHTMLfromResponse(response, fileName="response"):
